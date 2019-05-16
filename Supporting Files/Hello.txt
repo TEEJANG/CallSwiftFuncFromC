@@ -1,0 +1,12 @@
+//
+//  Hello.txt
+//  callSwiftFormCPP
+//
+//  Created by Hotnow Machine on 5/16/19.
+//  Copyright © 2019 Red Anchor Trading Corp. All rights reserved.
+//
+
+#include <metal_stdlib>
+using namespace metal;
+
+
