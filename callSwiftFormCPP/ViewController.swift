@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let test = testCall()
-        test.callSwiftFunc()
-        
-        Calltestfunction()
+//        let test = testCall()
+//        test.callSwiftFunc()
+//
+//        Calltestfunction()
     }
 
 

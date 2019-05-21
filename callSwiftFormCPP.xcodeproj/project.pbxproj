@@ -7,19 +7,516 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		197C7F9F317E3285369651CA /* Pods_callSwiftFormCPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B8F6B062E5A8F8CAA8C20C /* Pods_callSwiftFormCPP.framework */; };
 		C081D31D228D6B1600E91241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081D31C228D6B1600E91241 /* AppDelegate.swift */; };
 		C081D31F228D6B1600E91241 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081D31E228D6B1600E91241 /* ViewController.swift */; };
 		C081D322228D6B1600E91241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C081D320228D6B1600E91241 /* Main.storyboard */; };
 		C081D324228D6B1800E91241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C081D323228D6B1800E91241 /* Assets.xcassets */; };
 		C081D327228D6B1800E91241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C081D325228D6B1800E91241 /* LaunchScreen.storyboard */; };
+		C0C639A12293ED2B00B86797 /* libnative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639222293ECC000B86797 /* libnative.a */; };
+		C0C639A22293ED3A00B86797 /* libbeanbag-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639782293ECC000B86797 /* libbeanbag-d.a */; };
+		C0C639A32293ED4C00B86797 /* libf5-json-schema.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C6398E2293ECC000B86797 /* libf5-json-schema.a */; };
+		C0C639A42293ED7800B86797 /* libfost-core-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639502293ECC000B86797 /* libfost-core-d.a */; };
+		C0C639A52293EE0800B86797 /* libfost-crypto-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639562293ECC000B86797 /* libfost-crypto-d.a */; };
+		C0C639A62293EE3900B86797 /* libfost-inet-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639862293ECC000B86797 /* libfost-inet-d.a */; };
+		C0C639A72293EE4E00B86797 /* libfost-jsondb-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639722293ECC000B86797 /* libfost-jsondb-d.a */; };
+		C0C639A82293EE6800B86797 /* libfost-s3-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C6396C2293ECC000B86797 /* libfost-s3-d.a */; };
+		C0C639A92293EE7B00B86797 /* libfost-sinks-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639622293ECC000B86797 /* libfost-sinks-d.a */; };
+		C0C639AA2293EE8800B86797 /* libfost-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C6396A2293ECC000B86797 /* libfost-swift.a */; };
+		C0C639AB2293EE9B00B86797 /* libfost-test-d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639682293ECC000B86797 /* libfost-test-d.a */; };
+		C0C639AC2293EEAE00B86797 /* libcrypto++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C6392C2293ECC000B86797 /* libcrypto++.a */; };
+		C0C639AD2293EED100B86797 /* libboost_date_time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639262293ECC000B86797 /* libboost_date_time.a */; };
+		C0C639AE2293EEEB00B86797 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C639282293ECC000B86797 /* libboost_filesystem.a */; };
+		C0D3D0202293F9ED00DA3C99 /* libboringssl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D3CFD92293F9EC00DA3C99 /* libboringssl.tbd */; };
 		C0E3C6A4228D98A600688C25 /* Hello.txt in Resources */ = {isa = PBXBuildFile; fileRef = C0E3C6A3228D98A600688C25 /* Hello.txt */; };
 		C0E85187228D6BD300405246 /* testCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E85186228D6BD300405246 /* testCall.swift */; };
-		C0E8518C228D6CC700405246 /* caller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E8518B228D6CC700405246 /* caller.cpp */; };
 		C0E85192228D87D500405246 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E85191228D87D500405246 /* libc++.tbd */; };
 		C0E85194228D889800405246 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E85193228D889800405246 /* libc++abi.tbd */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C05369D42294316900DA0DAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C05369CF2294316800DA0DAF /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10FD4784051DB12EA422D0CA1949D5FA;
+			remoteInfo = BoringSSL;
+		};
+		C05369D62294316900DA0DAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C05369CF2294316800DA0DAF /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A96E047CA156BB26BBD732437138ED5C;
+			remoteInfo = "Pods-callSwiftFormCPP";
+		};
+		C0536A1D2294317A00DA0DAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C05369CF2294316800DA0DAF /* Pods.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5393BE21DF26FC154506D23DDA69027B;
+			remoteInfo = BoringSSL;
+		};
+		C0C639212293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E44D9A978D5E43A7B79B5915;
+			remoteInfo = native;
+		};
+		C0C639232293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9670BE54DA1A4B62996FBE76;
+			remoteInfo = boost_chrono;
+		};
+		C0C639252293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B28F553B5C9E4FE1B450C28A;
+			remoteInfo = boost_date_time;
+		};
+		C0C639272293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C408788A62141EDB4A8B431;
+			remoteInfo = boost_filesystem;
+		};
+		C0C639292293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DEB1B4F75F64EC783E2873E;
+			remoteInfo = boost_system;
+		};
+		C0C6392B2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4F3A7F89B643F89B4815D4;
+			remoteInfo = "crypto++";
+		};
+		C0C6392D2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5316865CEB054C94AA86D33B;
+			remoteInfo = "cord-compile-tests";
+		};
+		C0C6392F2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8FC2EEB1C10C4F7B83A18A66;
+			remoteInfo = "f5-cord-fuzz-u8loader";
+		};
+		C0C639312293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFC8093C425F494D9C53B339;
+			remoteInfo = "cord-headers-tests";
+		};
+		C0C639332293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7BA24102A634459FB9ECDF8B;
+			remoteInfo = "cord-run-test-lstring-compare";
+		};
+		C0C639352293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C083110471E49BDB35DB7A4;
+			remoteInfo = "cord-run-test-lstring-std_string";
+		};
+		C0C639372293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 266D90DEDD854C0A86CADF12;
+			remoteInfo = "cord-run-test-memory";
+		};
+		C0C639392293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 127DA05827F94902B3E20DC0;
+			remoteInfo = "cord-run-test-unicode-check_valid";
+		};
+		C0C6393B2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01920582F74547D0938ABE1B;
+			remoteInfo = "cord-run-test-unicode-encoding";
+		};
+		C0C6393D2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6BD458A549EE4A5384E40C52;
+			remoteInfo = "cord-run-test-unicode-string";
+		};
+		C0C6393F2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E9B717FC694401692B40FAF;
+			remoteInfo = "cord-run-test-unicode-view";
+		};
+		C0C639412293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9917BB172CD24F339F3BEE5A;
+			remoteInfo = "threading-headers-tests";
+		};
+		C0C639432293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8DD075E0ECB40E8B02A4582;
+			remoteInfo = "threading-run-test-limiters-unlimited-blocking";
+		};
+		C0C639452293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7FFA7FFE064447E8748B1E3;
+			remoteInfo = "threading-run-test-limiters-unlimited-nonblocking";
+		};
+		C0C639472293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 079F9C682620497DBCB7DD07;
+			remoteInfo = "threading-run-test-tsmap-unique_ptr";
+		};
+		C0C639492293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D6A7EF902A048F5AD0B3FE3;
+			remoteInfo = "fost-cli";
+		};
+		C0C6394B2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 934B915928D3458AA520C07F;
+			remoteInfo = "fost-cli-smoke";
+		};
+		C0C6394D2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D08C31468214147BBCA0D13;
+			remoteInfo = "fost-cli-smoke-check";
+		};
+		C0C6394F2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FEA972A6DD284CC084ABDC84;
+			remoteInfo = "fost-core";
+		};
+		C0C639512293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2AF57BD065147B5AFDE16FF;
+			remoteInfo = "fost-core-smoke";
+		};
+		C0C639532293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E19BFA4076B4122AF12B51A;
+			remoteInfo = "fost-core-smoke-check";
+		};
+		C0C639552293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C96221ADF8A140E2B284A680;
+			remoteInfo = "fost-crypto";
+		};
+		C0C639572293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BFD893DA5F46424CBF85807A;
+			remoteInfo = "fost-crypto-smoke";
+		};
+		C0C639592293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6352E19FC59E4D3BBAC8AB99;
+			remoteInfo = "fost-crypto-smoke-check";
+		};
+		C0C6395B2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21A5F9D0BBD943F5A2C7BA3A;
+			remoteInfo = "fost-datetime";
+		};
+		C0C6395D2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07574A6308B949B38B4AB022;
+			remoteInfo = "fost-datetime-smoke";
+		};
+		C0C6395F2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F0F28E8625B4F31AD4B49E9;
+			remoteInfo = "fost-datetime-smoke-check";
+		};
+		C0C639612293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C3125693FD84045B965FCE8;
+			remoteInfo = "fost-sinks";
+		};
+		C0C639632293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C65CC2B46C140109FAD8A9D;
+			remoteInfo = "fost-sinks-smoke";
+		};
+		C0C639652293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E96F2418BEDA484A926F6676;
+			remoteInfo = "fost-sinks-smoke-check";
+		};
+		C0C639672293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 767542DB157543E592E37440;
+			remoteInfo = "fost-test";
+		};
+		C0C639692293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE1076B895E345919A64E616;
+			remoteInfo = "fost-swift";
+		};
+		C0C6396B2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2199C3D99602471DB8880B4F;
+			remoteInfo = "fost-s3";
+		};
+		C0C6396D2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 97A81EDEE207499CB571A791;
+			remoteInfo = "fost-s3-smoke";
+		};
+		C0C6396F2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95AF2FE747CE4B928F694294;
+			remoteInfo = "fost-s3-smoke-check";
+		};
+		C0C639712293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62BD34AF18524B3DA943ECDA;
+			remoteInfo = "fost-jsondb";
+		};
+		C0C639732293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70C4D64E3FFA48F6B9A9AA25;
+			remoteInfo = "fost-jsondb-smoke";
+		};
+		C0C639752293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9F828082F1F4A21B42EFCBB;
+			remoteInfo = "fost-jsondb-smoke-check";
+		};
+		C0C639772293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D122271AC2964132A93FD7E2;
+			remoteInfo = beanbag;
+		};
+		C0C639792293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5F827A062EBF4CE09D70BF3F;
+			remoteInfo = "beanbag-smoke";
+		};
+		C0C6397B2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 917B686D530743FEA0D64771;
+			remoteInfo = "beanbag-smoke-check";
+		};
+		C0C6397D2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DB3AB1FE6A94FA4990345D7;
+			remoteInfo = "beanbag-views";
+		};
+		C0C6397F2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DA52DDC1DE6440F9F59C027;
+			remoteInfo = "beanbag-views-smoke";
+		};
+		C0C639812293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D120640377CE46B2BCFA1302;
+			remoteInfo = "beanbag-views-smoke-check";
+		};
+		C0C639832293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D06159D833D946A3B2CBF63D;
+			remoteInfo = "fost-hod";
+		};
+		C0C639852293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5EB3BA2DC0147EEA03BEF4E;
+			remoteInfo = "fost-inet";
+		};
+		C0C639872293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EE5288DA0B74C36B23396E3;
+			remoteInfo = "fost-inet-smoke";
+		};
+		C0C639892293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AF9D7C6196A449FE8C49C203;
+			remoteInfo = "fost-inet-smoke-check";
+		};
+		C0C6398B2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1015D2733D1F4B9FA77AD42F;
+			remoteInfo = "json-schema-validator";
+		};
+		C0C6398D2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BD7DED9B2A848AABCB7C734;
+			remoteInfo = "f5-json-schema";
+		};
+		C0C6398F2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB683551CE434B0EB23A3C1B;
+			remoteInfo = "json-schema-headers-tests";
+		};
+		C0C639912293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B98A7170489A4C5488FC50B1;
+			remoteInfo = "fost-urlhandler";
+		};
+		C0C639932293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9BEAAFBEC721402390CD6BA2;
+			remoteInfo = "fost-urlhandler-smoke";
+		};
+		C0C639952293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D83600835D45719FBDC8B8;
+			remoteInfo = "fost-urlhandler-smoke-check";
+		};
+		C0C639972293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4ED7D9762E0E41A38A889DEC;
+			remoteInfo = "fost-webserver";
+		};
+		C0C639992293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62D91B33764C42C789D96EE4;
+			remoteInfo = "fost-webtestrunner";
+		};
+		C0C6399B2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E62B5EF06322435D9A578DFA;
+			remoteInfo = "mdca-common";
+		};
+		C0C6399D2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F25E1B7FBEA41128853D413;
+			remoteInfo = "mdca-common-smoke";
+		};
+		C0C6399F2293ECC000B86797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 26B629F09B2B4F34B04C3BFA;
+			remoteInfo = "mdca-common-smoke-check";
+		};
+		C0D3D02122941EA300DA3C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AC8E7F2D6EE45E8ADF661DB;
+			remoteInfo = native;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6C27103A0F4782D26AE2D1CC /* Pods-callSwiftFormCPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-callSwiftFormCPP.release.xcconfig"; path = "Target Support Files/Pods-callSwiftFormCPP/Pods-callSwiftFormCPP.release.xcconfig"; sourceTree = "<group>"; };
+		A9B8F6B062E5A8F8CAA8C20C /* Pods_callSwiftFormCPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_callSwiftFormCPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C05369CF2294316800DA0DAF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		C081D319228D6B1600E91241 /* callSwiftFormCPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = callSwiftFormCPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C081D31C228D6B1600E91241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C081D31E228D6B1600E91241 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,13 +524,14 @@
 		C081D323228D6B1800E91241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C081D326228D6B1800E91241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C081D328228D6B1800E91241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "test-ios.xcodeproj"; path = "../cpp/fost/test-ios.xcodeproj"; sourceTree = "<group>"; };
+		C0D3CFD92293F9EC00DA3C99 /* libboringssl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libboringssl.tbd; path = usr/lib/libboringssl.tbd; sourceTree = SDKROOT; };
 		C0E3C6A3228D98A600688C25 /* Hello.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hello.txt; sourceTree = "<group>"; };
-		C0E85185228D6BA000405246 /* CppClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppClass.h; sourceTree = "<group>"; };
 		C0E85186228D6BD300405246 /* testCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCall.swift; sourceTree = "<group>"; };
-		C0E8518B228D6CC700405246 /* caller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = caller.cpp; sourceTree = "<group>"; };
 		C0E8518D228D775B00405246 /* CppAPI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CppAPI-Bridging-Header.h"; sourceTree = "<group>"; };
 		C0E85191228D87D500405246 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		C0E85193228D889800405246 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		F529B22ED75CBA177908177C /* Pods-callSwiftFormCPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-callSwiftFormCPP.debug.xcconfig"; path = "Target Support Files/Pods-callSwiftFormCPP/Pods-callSwiftFormCPP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,21 +539,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D3D0202293F9ED00DA3C99 /* libboringssl.tbd in Frameworks */,
+				C0C639AE2293EEEB00B86797 /* libboost_filesystem.a in Frameworks */,
+				C0C639AD2293EED100B86797 /* libboost_date_time.a in Frameworks */,
+				C0C639AC2293EEAE00B86797 /* libcrypto++.a in Frameworks */,
+				C0C639AB2293EE9B00B86797 /* libfost-test-d.a in Frameworks */,
+				C0C639AA2293EE8800B86797 /* libfost-swift.a in Frameworks */,
+				C0C639A92293EE7B00B86797 /* libfost-sinks-d.a in Frameworks */,
+				C0C639A82293EE6800B86797 /* libfost-s3-d.a in Frameworks */,
+				C0C639A72293EE4E00B86797 /* libfost-jsondb-d.a in Frameworks */,
+				C0C639A62293EE3900B86797 /* libfost-inet-d.a in Frameworks */,
+				C0C639A52293EE0800B86797 /* libfost-crypto-d.a in Frameworks */,
+				C0C639A42293ED7800B86797 /* libfost-core-d.a in Frameworks */,
+				C0C639A32293ED4C00B86797 /* libf5-json-schema.a in Frameworks */,
+				C0C639A22293ED3A00B86797 /* libbeanbag-d.a in Frameworks */,
+				C0C639A12293ED2B00B86797 /* libnative.a in Frameworks */,
 				C0E85194228D889800405246 /* libc++abi.tbd in Frameworks */,
 				C0E85192228D87D500405246 /* libc++.tbd in Frameworks */,
+				197C7F9F317E3285369651CA /* Pods_callSwiftFormCPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C05369D02294316800DA0DAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C05369D52294316900DA0DAF /* openssl.framework */,
+				C05369D72294316900DA0DAF /* Pods_callSwiftFormCPP.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C081D310228D6B1600E91241 = {
 			isa = PBXGroup;
 			children = (
+				C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */,
 				C081D32E228D6B3300E91241 /* Supporting Files */,
 				C081D31B228D6B1600E91241 /* callSwiftFormCPP */,
 				C081D31A228D6B1600E91241 /* Products */,
 				C0E85190228D87D500405246 /* Frameworks */,
+				E05CD45D9CD3475F1CD25291 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +616,77 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C0C638D92293ECBE00B86797 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0C639222293ECC000B86797 /* libnative.a */,
+				C0C639242293ECC000B86797 /* libboost_chrono.a */,
+				C0C639262293ECC000B86797 /* libboost_date_time.a */,
+				C0C639282293ECC000B86797 /* libboost_filesystem.a */,
+				C0C6392A2293ECC000B86797 /* libboost_system.a */,
+				C0C6392C2293ECC000B86797 /* libcrypto++.a */,
+				C0C6392E2293ECC000B86797 /* libcord-compile-tests.a */,
+				C0C639302293ECC000B86797 /* f5-cord-fuzz-u8loader */,
+				C0C639322293ECC000B86797 /* libcord-headers-tests.a */,
+				C0C639342293ECC000B86797 /* cord-run-test-lstring-compare */,
+				C0C639362293ECC000B86797 /* cord-run-test-lstring-std_string */,
+				C0C639382293ECC000B86797 /* cord-run-test-memory */,
+				C0C6393A2293ECC000B86797 /* cord-run-test-unicode-check_valid */,
+				C0C6393C2293ECC000B86797 /* cord-run-test-unicode-encoding */,
+				C0C6393E2293ECC000B86797 /* cord-run-test-unicode-string */,
+				C0C639402293ECC000B86797 /* cord-run-test-unicode-view */,
+				C0C639422293ECC000B86797 /* libthreading-headers-tests.a */,
+				C0C639442293ECC000B86797 /* threading-run-test-limiters-unlimited-blocking */,
+				C0C639462293ECC000B86797 /* threading-run-test-limiters-unlimited-nonblocking */,
+				C0C639482293ECC000B86797 /* threading-run-test-tsmap-unique_ptr */,
+				C0C6394A2293ECC000B86797 /* libfost-cli-d.a */,
+				C0C6394C2293ECC000B86797 /* libfost-cli-smoke.a */,
+				C0C6394E2293ECC000B86797 /* fost-cli-smoke-check */,
+				C0C639502293ECC000B86797 /* libfost-core-d.a */,
+				C0C639522293ECC000B86797 /* libfost-core-smoke.a */,
+				C0C639542293ECC000B86797 /* fost-core-smoke-check */,
+				C0C639562293ECC000B86797 /* libfost-crypto-d.a */,
+				C0C639582293ECC000B86797 /* libfost-crypto-smoke.a */,
+				C0C6395A2293ECC000B86797 /* fost-crypto-smoke-check */,
+				C0C6395C2293ECC000B86797 /* libfost-datetime-d.a */,
+				C0C6395E2293ECC000B86797 /* libfost-datetime-smoke.a */,
+				C0C639602293ECC000B86797 /* fost-datetime-smoke-check */,
+				C0C639622293ECC000B86797 /* libfost-sinks-d.a */,
+				C0C639642293ECC000B86797 /* libfost-sinks-smoke.a */,
+				C0C639662293ECC000B86797 /* fost-sinks-smoke-check */,
+				C0C639682293ECC000B86797 /* libfost-test-d.a */,
+				C0C6396A2293ECC000B86797 /* libfost-swift.a */,
+				C0C6396C2293ECC000B86797 /* libfost-s3-d.a */,
+				C0C6396E2293ECC000B86797 /* libfost-s3-smoke.a */,
+				C0C639702293ECC000B86797 /* fost-s3-smoke-check */,
+				C0C639722293ECC000B86797 /* libfost-jsondb-d.a */,
+				C0C639742293ECC000B86797 /* libfost-jsondb-smoke.a */,
+				C0C639762293ECC000B86797 /* fost-jsondb-smoke-check */,
+				C0C639782293ECC000B86797 /* libbeanbag-d.a */,
+				C0C6397A2293ECC000B86797 /* libbeanbag-smoke.a */,
+				C0C6397C2293ECC000B86797 /* beanbag-smoke-check */,
+				C0C6397E2293ECC000B86797 /* libbeanbag-views-d.a */,
+				C0C639802293ECC000B86797 /* libbeanbag-views-smoke.a */,
+				C0C639822293ECC000B86797 /* beanbag-views-smoke-check */,
+				C0C639842293ECC000B86797 /* libfost-hod-d.a */,
+				C0C639862293ECC000B86797 /* libfost-inet-d.a */,
+				C0C639882293ECC000B86797 /* libfost-inet-smoke.a */,
+				C0C6398A2293ECC000B86797 /* fost-inet-smoke-check */,
+				C0C6398C2293ECC000B86797 /* json-schema-validator */,
+				C0C6398E2293ECC000B86797 /* libf5-json-schema.a */,
+				C0C639902293ECC000B86797 /* libjson-schema-headers-tests.a */,
+				C0C639922293ECC000B86797 /* libfost-urlhandler-d.a */,
+				C0C639942293ECC000B86797 /* libfost-urlhandler-smoke.a */,
+				C0C639962293ECC000B86797 /* fost-urlhandler-smoke-check */,
+				C0C639982293ECC000B86797 /* fost-webserver */,
+				C0C6399A2293ECC000B86797 /* libfost-webtestrunner-d.a */,
+				C0C6399C2293ECC000B86797 /* libmdca-common-d.a */,
+				C0C6399E2293ECC000B86797 /* libmdca-common-smoke.a */,
+				C0C639A02293ECC000B86797 /* mdca-common-smoke-check */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C0E85184228D6B7C00405246 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +697,6 @@
 		C0E8518A228D6CAB00405246 /* cpp */ = {
 			isa = PBXGroup;
 			children = (
-				C0E8518B228D6CC700405246 /* caller.cpp */,
-				C0E85185228D6BA000405246 /* CppClass.h */,
 				C0E8518D228D775B00405246 /* CppAPI-Bridging-Header.h */,
 			);
 			path = cpp;
@@ -111,10 +705,22 @@
 		C0E85190228D87D500405246 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C05369CF2294316800DA0DAF /* Pods.xcodeproj */,
+				C0D3CFD92293F9EC00DA3C99 /* libboringssl.tbd */,
 				C0E85193228D889800405246 /* libc++abi.tbd */,
 				C0E85191228D87D500405246 /* libc++.tbd */,
+				A9B8F6B062E5A8F8CAA8C20C /* Pods_callSwiftFormCPP.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E05CD45D9CD3475F1CD25291 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F529B22ED75CBA177908177C /* Pods-callSwiftFormCPP.debug.xcconfig */,
+				6C27103A0F4782D26AE2D1CC /* Pods-callSwiftFormCPP.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,13 +730,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C081D32B228D6B1800E91241 /* Build configuration list for PBXNativeTarget "callSwiftFormCPP" */;
 			buildPhases = (
+				561D981F47A5C61CC972FDCB /* [CP] Check Pods Manifest.lock */,
 				C081D315228D6B1600E91241 /* Sources */,
 				C081D316228D6B1600E91241 /* Frameworks */,
 				C081D317228D6B1600E91241 /* Resources */,
+				FD62E199A8F057487057211B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C0536A1E2294317A00DA0DAF /* PBXTargetDependency */,
+				C0D3D02222941EA300DA3C99 /* PBXTargetDependency */,
 			);
 			name = callSwiftFormCPP;
 			productName = callSwiftFormCPP;
@@ -163,12 +773,487 @@
 			mainGroup = C081D310228D6B1600E91241;
 			productRefGroup = C081D31A228D6B1600E91241 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C05369D02294316800DA0DAF /* Products */;
+					ProjectRef = C05369CF2294316800DA0DAF /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = C0C638D92293ECBE00B86797 /* Products */;
+					ProjectRef = C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C081D318228D6B1600E91241 /* callSwiftFormCPP */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C05369D52294316900DA0DAF /* openssl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = openssl.framework;
+			remoteRef = C05369D42294316900DA0DAF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C05369D72294316900DA0DAF /* Pods_callSwiftFormCPP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_callSwiftFormCPP.framework;
+			remoteRef = C05369D62294316900DA0DAF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639222293ECC000B86797 /* libnative.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnative.a;
+			remoteRef = C0C639212293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639242293ECC000B86797 /* libboost_chrono.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libboost_chrono.a;
+			remoteRef = C0C639232293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639262293ECC000B86797 /* libboost_date_time.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libboost_date_time.a;
+			remoteRef = C0C639252293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639282293ECC000B86797 /* libboost_filesystem.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libboost_filesystem.a;
+			remoteRef = C0C639272293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6392A2293ECC000B86797 /* libboost_system.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libboost_system.a;
+			remoteRef = C0C639292293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6392C2293ECC000B86797 /* libcrypto++.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcrypto++.a";
+			remoteRef = C0C6392B2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6392E2293ECC000B86797 /* libcord-compile-tests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcord-compile-tests.a";
+			remoteRef = C0C6392D2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639302293ECC000B86797 /* f5-cord-fuzz-u8loader */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "f5-cord-fuzz-u8loader";
+			remoteRef = C0C6392F2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639322293ECC000B86797 /* libcord-headers-tests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcord-headers-tests.a";
+			remoteRef = C0C639312293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639342293ECC000B86797 /* cord-run-test-lstring-compare */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "cord-run-test-lstring-compare";
+			remoteRef = C0C639332293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639362293ECC000B86797 /* cord-run-test-lstring-std_string */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "cord-run-test-lstring-std_string";
+			remoteRef = C0C639352293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639382293ECC000B86797 /* cord-run-test-memory */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "cord-run-test-memory";
+			remoteRef = C0C639372293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6393A2293ECC000B86797 /* cord-run-test-unicode-check_valid */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "cord-run-test-unicode-check_valid";
+			remoteRef = C0C639392293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6393C2293ECC000B86797 /* cord-run-test-unicode-encoding */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "cord-run-test-unicode-encoding";
+			remoteRef = C0C6393B2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6393E2293ECC000B86797 /* cord-run-test-unicode-string */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "cord-run-test-unicode-string";
+			remoteRef = C0C6393D2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639402293ECC000B86797 /* cord-run-test-unicode-view */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "cord-run-test-unicode-view";
+			remoteRef = C0C6393F2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639422293ECC000B86797 /* libthreading-headers-tests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthreading-headers-tests.a";
+			remoteRef = C0C639412293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639442293ECC000B86797 /* threading-run-test-limiters-unlimited-blocking */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "threading-run-test-limiters-unlimited-blocking";
+			remoteRef = C0C639432293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639462293ECC000B86797 /* threading-run-test-limiters-unlimited-nonblocking */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "threading-run-test-limiters-unlimited-nonblocking";
+			remoteRef = C0C639452293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639482293ECC000B86797 /* threading-run-test-tsmap-unique_ptr */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "threading-run-test-tsmap-unique_ptr";
+			remoteRef = C0C639472293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6394A2293ECC000B86797 /* libfost-cli-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-cli-d.a";
+			remoteRef = C0C639492293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6394C2293ECC000B86797 /* libfost-cli-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-cli-smoke.a";
+			remoteRef = C0C6394B2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6394E2293ECC000B86797 /* fost-cli-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-cli-smoke-check";
+			remoteRef = C0C6394D2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639502293ECC000B86797 /* libfost-core-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-core-d.a";
+			remoteRef = C0C6394F2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639522293ECC000B86797 /* libfost-core-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-core-smoke.a";
+			remoteRef = C0C639512293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639542293ECC000B86797 /* fost-core-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-core-smoke-check";
+			remoteRef = C0C639532293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639562293ECC000B86797 /* libfost-crypto-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-crypto-d.a";
+			remoteRef = C0C639552293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639582293ECC000B86797 /* libfost-crypto-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-crypto-smoke.a";
+			remoteRef = C0C639572293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6395A2293ECC000B86797 /* fost-crypto-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-crypto-smoke-check";
+			remoteRef = C0C639592293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6395C2293ECC000B86797 /* libfost-datetime-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-datetime-d.a";
+			remoteRef = C0C6395B2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6395E2293ECC000B86797 /* libfost-datetime-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-datetime-smoke.a";
+			remoteRef = C0C6395D2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639602293ECC000B86797 /* fost-datetime-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-datetime-smoke-check";
+			remoteRef = C0C6395F2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639622293ECC000B86797 /* libfost-sinks-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-sinks-d.a";
+			remoteRef = C0C639612293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639642293ECC000B86797 /* libfost-sinks-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-sinks-smoke.a";
+			remoteRef = C0C639632293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639662293ECC000B86797 /* fost-sinks-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-sinks-smoke-check";
+			remoteRef = C0C639652293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639682293ECC000B86797 /* libfost-test-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-test-d.a";
+			remoteRef = C0C639672293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6396A2293ECC000B86797 /* libfost-swift.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-swift.a";
+			remoteRef = C0C639692293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6396C2293ECC000B86797 /* libfost-s3-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-s3-d.a";
+			remoteRef = C0C6396B2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6396E2293ECC000B86797 /* libfost-s3-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-s3-smoke.a";
+			remoteRef = C0C6396D2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639702293ECC000B86797 /* fost-s3-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-s3-smoke-check";
+			remoteRef = C0C6396F2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639722293ECC000B86797 /* libfost-jsondb-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-jsondb-d.a";
+			remoteRef = C0C639712293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639742293ECC000B86797 /* libfost-jsondb-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-jsondb-smoke.a";
+			remoteRef = C0C639732293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639762293ECC000B86797 /* fost-jsondb-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-jsondb-smoke-check";
+			remoteRef = C0C639752293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639782293ECC000B86797 /* libbeanbag-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbeanbag-d.a";
+			remoteRef = C0C639772293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6397A2293ECC000B86797 /* libbeanbag-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbeanbag-smoke.a";
+			remoteRef = C0C639792293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6397C2293ECC000B86797 /* beanbag-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "beanbag-smoke-check";
+			remoteRef = C0C6397B2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6397E2293ECC000B86797 /* libbeanbag-views-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbeanbag-views-d.a";
+			remoteRef = C0C6397D2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639802293ECC000B86797 /* libbeanbag-views-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libbeanbag-views-smoke.a";
+			remoteRef = C0C6397F2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639822293ECC000B86797 /* beanbag-views-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "beanbag-views-smoke-check";
+			remoteRef = C0C639812293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639842293ECC000B86797 /* libfost-hod-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-hod-d.a";
+			remoteRef = C0C639832293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639862293ECC000B86797 /* libfost-inet-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-inet-d.a";
+			remoteRef = C0C639852293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639882293ECC000B86797 /* libfost-inet-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-inet-smoke.a";
+			remoteRef = C0C639872293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6398A2293ECC000B86797 /* fost-inet-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-inet-smoke-check";
+			remoteRef = C0C639892293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6398C2293ECC000B86797 /* json-schema-validator */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "json-schema-validator";
+			remoteRef = C0C6398B2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6398E2293ECC000B86797 /* libf5-json-schema.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libf5-json-schema.a";
+			remoteRef = C0C6398D2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639902293ECC000B86797 /* libjson-schema-headers-tests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjson-schema-headers-tests.a";
+			remoteRef = C0C6398F2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639922293ECC000B86797 /* libfost-urlhandler-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-urlhandler-d.a";
+			remoteRef = C0C639912293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639942293ECC000B86797 /* libfost-urlhandler-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-urlhandler-smoke.a";
+			remoteRef = C0C639932293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639962293ECC000B86797 /* fost-urlhandler-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-urlhandler-smoke-check";
+			remoteRef = C0C639952293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639982293ECC000B86797 /* fost-webserver */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "fost-webserver";
+			remoteRef = C0C639972293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6399A2293ECC000B86797 /* libfost-webtestrunner-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfost-webtestrunner-d.a";
+			remoteRef = C0C639992293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6399C2293ECC000B86797 /* libmdca-common-d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libmdca-common-d.a";
+			remoteRef = C0C6399B2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C6399E2293ECC000B86797 /* libmdca-common-smoke.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libmdca-common-smoke.a";
+			remoteRef = C0C6399D2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C639A02293ECC000B86797 /* mdca-common-smoke-check */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "mdca-common-smoke-check";
+			remoteRef = C0C6399F2293ECC000B86797 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C081D317228D6B1600E91241 /* Resources */ = {
@@ -184,6 +1269,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		561D981F47A5C61CC972FDCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-callSwiftFormCPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD62E199A8F057487057211B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-callSwiftFormCPP/Pods-callSwiftFormCPP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-callSwiftFormCPP/Pods-callSwiftFormCPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C081D315228D6B1600E91241 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -191,12 +1323,24 @@
 			files = (
 				C0E85187228D6BD300405246 /* testCall.swift in Sources */,
 				C081D31F228D6B1600E91241 /* ViewController.swift in Sources */,
-				C0E8518C228D6CC700405246 /* caller.cpp in Sources */,
 				C081D31D228D6B1600E91241 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0536A1E2294317A00DA0DAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BoringSSL;
+			targetProxy = C0536A1D2294317A00DA0DAF /* PBXContainerItemProxy */;
+		};
+		C0D3D02222941EA300DA3C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = native;
+			targetProxy = C0D3D02122941EA300DA3C99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C081D320228D6B1600E91241 /* Main.storyboard */ = {
@@ -336,15 +1480,28 @@
 		};
 		C081D32C228D6B1800E91241 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F529B22ED75CBA177908177C /* Pods-callSwiftFormCPP.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDJCDBPF45;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL/openssl.framework/Headers\"",
+					/usr/local/ssl/include,
+					/usr/local/Cellar/openssl/lib,
+				);
 				INFOPLIST_FILE = callSwiftFormCPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"openssl\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-now.callSwiftFormCPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,15 +1513,29 @@
 		};
 		C081D32D228D6B1800E91241 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C27103A0F4782D26AE2D1CC /* Pods-callSwiftFormCPP.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDJCDBPF45;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL/openssl.framework/Headers\"",
+					/usr/local/ssl/include,
+					/usr/local/Cellar/openssl/lib,
+					/usr/local/Cellar/openssl/lib,
+				);
 				INFOPLIST_FILE = callSwiftFormCPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"openssl\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hot-now.callSwiftFormCPP";
 				PRODUCT_NAME = "$(TARGET_NAME)";

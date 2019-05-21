@@ -8,7 +8,8 @@
 
 //#include "CppAPI-Bridging-Header.h"
 #include <iostream>
-#include "CppClass.h"
+#include "../../callSwiftFormCPP/callSwiftFormCPP/cpp/CppAPI-Bridging-Header.h"
+
 
 typedef struct Callbacks
 {
@@ -17,9 +18,7 @@ typedef struct Callbacks
     
 }Callbacks;
 
-void (*ajjjj)();
 std::function<void()> actaulCallback;
-
 
 static Callbacks * callbacks = new Callbacks();
 
@@ -32,10 +31,6 @@ extern "C" void CallSwiftMemberFromC(void * classPtr, void(*callback)(void *))
         callbacks->callback(callbacks->classPtr);
     };
     
-}
-
-extern "C" void CallSwiftFromC(void(*f)()){
-
 }
 
 extern "C" void Calltestfunction() {
