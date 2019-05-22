@@ -11,30 +11,18 @@
 #include "../../callSwiftFormCPP/callSwiftFormCPP/cpp/CppAPI-Bridging-Header.h"
 
 
-typedef struct Callbacks
+std::function<void(void)> actaulCallback;
+
+extern "C" void registerSwiftMemberFromC(void(*callback)(void))
 {
-    void * classPtr;
-    void(*callback)(void *);
-    
-}Callbacks;
-
-std::function<void()> actaulCallback;
-
-static Callbacks * callbacks = new Callbacks();
-
-extern "C" void CallSwiftMemberFromC(void * classPtr, void(*callback)(void *))
-{
-    callbacks->classPtr = classPtr;
-    callbacks->callback = callback;
-    
-    actaulCallback = [&](){
-        callbacks->callback(callbacks->classPtr);
+    actaulCallback = [callback](){
+        callback();
     };
     
 }
 
 extern "C" void Calltestfunction() {
-    actaulCallback();
+    return actaulCallback();
 }
 
 
