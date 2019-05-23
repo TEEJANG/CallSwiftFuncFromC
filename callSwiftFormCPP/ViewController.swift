@@ -12,12 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        withUnsafePointer(to: readFile()) {
+//            print("readFile value has address: \($0)")
+//        }
         // Do any additional setup after loading the view.
 //        registerSwiftFunctoC()
-//        let str = Calltestfunction()! as String
+//        let str = Calltestfunction() as String
 //        print("\(String(describing: str))")
     }
 
-
+    @IBAction func callCfunc(_ sender: Any) {
+        buttonTrigger()
+    }
+    
+    @IBAction func checkValueOnMem(_ sender: Any) {
+        checktheStringValue()
+    }
 }
 

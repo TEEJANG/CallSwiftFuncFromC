@@ -13,7 +13,9 @@ extern "C" {
 #endif
     void registerSwiftMemberFromC(NSString * (*callback)(void));
     void CallSwiftFromC(void(*f)());
-    NSString * Calltestfunction();
+    NSString * callReadFileFromSwift();
+    void buttonTrigger();
+    void checktheStringValue();
     
 #ifdef __cplusplus
 }
