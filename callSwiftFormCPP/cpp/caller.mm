@@ -11,17 +11,17 @@
 #include "../../callSwiftFormCPP/callSwiftFormCPP/cpp/CppAPI-Bridging-Header.h"
 
 
-std::function<void(void)> actaulCallback;
+std::function<NSString * (void)> actaulCallback;
 
-extern "C" void registerSwiftMemberFromC(void(*callback)(void))
+extern "C" void registerSwiftMemberFromC(NSString * (*callback)(void))
 {
     actaulCallback = [callback](){
-        callback();
+        return callback();
     };
     
 }
 
-extern "C" void Calltestfunction() {
+extern "C" NSString * Calltestfunction() {
     return actaulCallback();
 }
 

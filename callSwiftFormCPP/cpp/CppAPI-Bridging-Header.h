@@ -11,9 +11,9 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    void registerSwiftMemberFromC(void(*callback)(void));
+    void registerSwiftMemberFromC(NSString * (*callback)(void));
     void CallSwiftFromC(void(*f)());
-    void Calltestfunction();
+    NSString * Calltestfunction();
     
 #ifdef __cplusplus
 }

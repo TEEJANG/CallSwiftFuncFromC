@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		197C7F9F317E3285369651CA /* Pods_callSwiftFormCPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B8F6B062E5A8F8CAA8C20C /* Pods_callSwiftFormCPP.framework */; };
-		C0536A31229554A600DA0DAF /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0536A302295549900DA0DAF /* Asset.swift */; };
+		C0536A3722957FCB00DA0DAF /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0536A3622957FCB00DA0DAF /* Asset.swift */; };
 		C081D31D228D6B1600E91241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081D31C228D6B1600E91241 /* AppDelegate.swift */; };
 		C081D31F228D6B1600E91241 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081D31E228D6B1600E91241 /* ViewController.swift */; };
 		C081D322228D6B1600E91241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C081D320228D6B1600E91241 /* Main.storyboard */; };
@@ -517,8 +517,7 @@
 		6C27103A0F4782D26AE2D1CC /* Pods-callSwiftFormCPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-callSwiftFormCPP.release.xcconfig"; path = "Target Support Files/Pods-callSwiftFormCPP/Pods-callSwiftFormCPP.release.xcconfig"; sourceTree = "<group>"; };
 		A9B8F6B062E5A8F8CAA8C20C /* Pods_callSwiftFormCPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_callSwiftFormCPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05369CF2294316800DA0DAF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
-		C0536A2E22952CCF00DA0DAF /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = ../cpp/src/Asset.swift; sourceTree = "<group>"; };
-		C0536A302295549900DA0DAF /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		C0536A3622957FCB00DA0DAF /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = ../../cpp/src/Asset.swift; sourceTree = "<group>"; };
 		C081D319228D6B1600E91241 /* callSwiftFormCPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = callSwiftFormCPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C081D31C228D6B1600E91241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C081D31E228D6B1600E91241 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -576,7 +575,6 @@
 		C081D310228D6B1600E91241 = {
 			isa = PBXGroup;
 			children = (
-				C0536A2E22952CCF00DA0DAF /* Asset.swift */,
 				C0C638D82293ECBE00B86797 /* test-ios.xcodeproj */,
 				C081D32E228D6B3300E91241 /* Supporting Files */,
 				C081D31B228D6B1600E91241 /* callSwiftFormCPP */,
@@ -599,8 +597,8 @@
 			children = (
 				C0E8518A228D6CAB00405246 /* cpp */,
 				C0E85184228D6B7C00405246 /* Resource */,
+				C0536A3622957FCB00DA0DAF /* Asset.swift */,
 				C081D31C228D6B1600E91241 /* AppDelegate.swift */,
-				C0536A302295549900DA0DAF /* Asset.swift */,
 				C081D31E228D6B1600E91241 /* ViewController.swift */,
 				C081D320228D6B1600E91241 /* Main.storyboard */,
 				C081D323228D6B1800E91241 /* Assets.xcassets */,
@@ -1323,7 +1321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0536A31229554A600DA0DAF /* Asset.swift in Sources */,
+				C0536A3722957FCB00DA0DAF /* Asset.swift in Sources */,
 				C081D31F228D6B1600E91241 /* ViewController.swift in Sources */,
 				C081D31D228D6B1600E91241 /* AppDelegate.swift in Sources */,
 			);
