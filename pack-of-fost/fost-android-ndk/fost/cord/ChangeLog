@@ -1,0 +1,88 @@
+2019-03-01  Kirit Sælensminde  <kirit@felspar.com>
+ Deprecated two argument `substr` as the second argument handling doesn't match `std::string::substr`.
+
+2018-12-08  Kirit Sælensminde  <kirit@felspar.com>
+ Add `ends_with` on the u8view and u8string.
+
+2018-12-08  Kirit Sælensminde  <kirit@felspar.com>
+ Add `const` iteration of `shared_buffer`.
+
+2018-11-23  Kirit Sælensminde  <kirit@felspar.com>
+ Support (explicit) conversions of the string types to `std::string_view`
+
+2018-10-24  Kirit Sælensminde  <kirit@felspar.com>
+ Add a new `f5::cord::string` type, immutable shared string.
+
+2018-08-31  Kirit Sælensminde  <kirit@felspar.com>
+ * Add a `starts_with` member to `u8view`.
+ * Add a missing comparison operator.
+
+2018-08-16  Kirit Sælensminde  <kirit@felspar.com>
+ Add a member to fetch the number of code points from `u8view`.
+
+2018-08-12  Kirit Sælensminde  <kirit@felspar.com>
+ Fix a bug in the printing of `u8view` to streams.
+
+2018-05-30  Kirit Sælensminde  <kirit@felspar.com>
+ Add more equality comparison for u8view.
+
+2018-05-30  Kirit Sælensminde  <kirit@felspar.com>
+ Add better members for initialising the `shared_buffer`.
+
+2018-05-22  Kirit Sælensminde  <kirit@felspar.com>
+ Add a `memory` method to the `u8view` so that the underlying memory buffer can be accessed.
+
+2017-12-28  Kirit Sælensminde  <kirit@felspar.com>
+ * Add `empty` to the `u8view` and buffers.
+ * Add ability to output `u8view` and move overloaded `operator <<`s to `std` namespace.
+
+2017-12-24  Kirit Sælensminde  <kirit@felspar.com>
+ Allow appending of a `u8view` to a `std::string`.
+
+2017-12-19  Kirit Sælensminde  <kirit@felspar.com>
+ `u8view`s can be concatenated to form `std::string`s.
+
+2017-12-15  Kirit Sælensminde  <kirit@felspar.com>
+ * `u8view` supports operator <.
+ * `lstring` now also has a string literal, `_l`.
+
+2017-12-13  Kirit Sælensminde  <kirit@felspar.com>
+ * Add `empty()` member to `lstirng`.
+ * The const shared string buffers need to be immutable.
+
+2017-12-12  Kirit Sælensminde  <kirit@felspar.com>
+ * `u8view` can be explicitly converted to a `std::string`.
+ * `u8view` is now comparable with `const char *`.
+
+2017-07-25  Kirit Sælensminde  <kirit@felspar.com>
+ Add string equality comparison and `substr` operations to `u8view`.
+
+2017-07-25  Kirit Sælensminde  <kirit@felspar.com>
+ Fill in more of the `lstring` comparison members.
+
+2017-07-17  Kirit Sælensminde  <kirit@felspar.com>
+ * Add shared buffers who can own strings (and other things).
+ * Rename `array_view` to `buffer` as it is not always immutable.
+ * Add `u8view` and UTF8 decode function.
+
+2017-07-16  Kirit Sælensminde  <kirit@felspar.com>
+ * Added an `array_view` with some `constexpr` support.
+ * Add a `_t` literal for creating `tstring` instances. This allows us to deprecate the `vstring` template.
+
+2017-03-27  Kirit Sælensminde  <kirit@felspar.com>
+ Added `iostream` output for `lstring`.
+
+2017-01-01  Kirit Sælensminde  <kirit@felspar.com>
+ Add in iterators for converting between some combinations of UTF encodings.
+
+2016-10-15  Kirit Sælensminde  <kirit@felspar.com>
+ Start to add support for Unicode with UTF-8 decoding.
+
+2016-04-15  Kirit Sælensminde  <kirit@felspar.com>
+ Add `operator !=` to `lstring`.
+
+2016-04-14  Kirit Sælensminde  <kirit@felspar.com>
+ Implement `constexpr` and `std::string` ordering for `lstring`.
+
+2016-04-11  Kirit Sælensminde  <kirit@felspar.com>
+ Initial basic compile time strings.

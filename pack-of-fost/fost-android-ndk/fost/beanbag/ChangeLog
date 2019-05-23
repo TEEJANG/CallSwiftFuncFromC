@@ -1,0 +1,54 @@
+2016-08-08  Kirit Saelensminde  <kirit@felspar.com>
+ Make the function for converting a path to a jcursor generally available.
+
+2016-05-21  Kirit Saelensminde  <kirit@felspar.com>
+ Downgrade two log messages to debug level.
+
+2016-04-17  Kirit Saelensminde  <kirit@felspar.com>
+ Add `op:remove` and `op:created` transformations for `PATCH` requests.
+
+2016-04-16  Kirit Saelensminde  <kirit@felspar.com>
+ Add `PATCH` method to the raw beanbag view and operations for manipulating them.
+
+2015-11-20  Kirit Saelensminde  <kirit@felspar.com>
+ Removed use of deprecated Fost APIs.
+
+2015-06-14  Kirit Saelensminde  <kirit@felspar.com>
+ * Fixed up tests to remove use of `std::auto_ptr`.
+ * Improved error reporting when opening a beanbag.
+
+2015-02-27  Kirit Saelensminde  <kirit@felspar.com>
+ Refactored DELETE hook, some types and header layout.
+
+2015-02-24  Kirit Saelensminde  <kirit@felspar.com>
+ Add a hook where a DELETE on a beanbag can be dropped, or other actions taken first.
+
+2015-02-11  Kirit Saelensminde  <kirit@felspar.com>
+ Correct HTTP DELETE return value and implement deletion of beanbags.
+
+2014-11-11  Kirit Saelensminde  <kirit@felspar.com>
+ Fix a test so it doesn't depend on being built within the beanbag project.
+
+2014-09-07  Kirit Saelensminde  <kirit@felspar.com>
+ Added build support for Windows.
+
+2012-08-16  Kirit Saelensminde  <kirit@felspar.com>
+ Can now set up an alias for a given database so the same underlying database can be referred to by more than one name.
+
+2012-08-07  Kirit Saelensminde  <kirit@felspar.com>
+ If there is no HTML content given then return a JSON response for the request.
+
+2012-08-02  Kirit Saelensminde  <kirit@felspar.com>
+ Allow the database to be fetched through a virtual method so it can be overridden.
+ There is no reason why converting a path to a jcursor should require the database so remove it from the method signature.
+
+2012-08-01  Kirit Saelensminde  <kirit@felspar.com>
+ Moved the database header so that other code can also access beanbags directly without needing to go through the web server.
+
+2012-03-02  Kirit Saelensminde  <kirit@felspar.com>
+ Allow PUT to be done at a new position in the JSON. Objects and arrays will be created as needed to accommodate the new data at the requested location.
+ Any query string at all will force JSON response (as text/plain for now). For future compatibility use __ as the query string key. I.e. http://localhost:8080/?__=
+
+2012-02-26  Kirit Saelensminde  <kirit@felspar.com>
+ Added a raw JSON editor.
+ Added ChangeLog

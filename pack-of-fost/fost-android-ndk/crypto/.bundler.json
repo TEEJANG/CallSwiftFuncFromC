@@ -1,0 +1,6 @@
+{
+    "ignore": {
+        "names": ["crypto++"]
+    }
+}
+

@@ -1,0 +1,1351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6927133B7E534BD5B356F3C8 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				133A784B7FA54143B0F9F881 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		47749EF584F44899BF34F0D6 /* json-schema-tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C455188F156749E3BFFBE6D3 /* Build configuration list for PBXAggregateTarget "json-schema-tests" */;
+			buildPhases = (
+				693FC89B10E04647B08901E8 /* CMake Rules */,
+			);
+			dependencies = (
+				E0F2F759F94B475D91B6C804 /* PBXTargetDependency */,
+			);
+			name = "json-schema-tests";
+			productName = "json-schema-tests";
+		};
+		72EF43544CFE41678E878464 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DC48943012DC40F191BF7684 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				B0871F141C394F1E82BB7787 /* CMake Rules */,
+			);
+			dependencies = (
+				2F4608FC00EE422F9410C056 /* PBXTargetDependency */,
+				BBB541C8FFE74AC39360E9BB /* PBXTargetDependency */,
+				8EF68DD485024995A84B1842 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		E4C19B3BD8EF408897C6D1CE /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 760118DFF22F4EBEA2C61A7E /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				6E1F1A0EB377435EB5056B07 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				DAB12ED83D5849789B618B18 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		05993C63C3C54D1897BC32B5 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.cpp */ = {isa = PBXBuildFile; fileRef = C3EC0044A485420698443E2F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.cpp */; };
+		1B5548A0CC6447048F492AFD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.object.cpp */ = {isa = PBXBuildFile; fileRef = 6FD56D8D008548279997C51A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.object.cpp */; };
+		1FF74FCE7C3745BEA43524DA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/valid.cpp */ = {isa = PBXBuildFile; fileRef = 6DDEEA48FBC14CDD9F43B38F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/valid.cpp */; };
+		23620BEE65E14797A34F5BA5 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.loaders.cpp */ = {isa = PBXBuildFile; fileRef = DBBF293E6BF94F4387652E2B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.loaders.cpp */; };
+		23F4F571234440D98771B18E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cache.cpp */ = {isa = PBXBuildFile; fileRef = 53CCC6E49D404D22A3B62167 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cache.cpp */; };
+		4967DAD6FDC84EE193F52AFD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cpp */ = {isa = PBXBuildFile; fileRef = B8D9132D423A4F328DCB5ADA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cpp */; };
+		50791CDEA8CD4C1BB7270D1B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/validator.cpp */ = {isa = PBXBuildFile; fileRef = 0A5DBF7DEDD1478DAC4DC8DF /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/validator.cpp */; };
+		7AF813A153144181A0A80A75 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 565AC79B4BA44818B411167D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/CMakeLists.txt */; };
+		86A640A719424F3D8DBF24AA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.loaders.cpp */ = {isa = PBXBuildFile; fileRef = 3D0CFECB8808456689A79346 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.loaders.cpp */; };
+		BF3919A8F56C4513A2C5C692 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.array.cpp */ = {isa = PBXBuildFile; fileRef = 9158744AFB0744648D992E96 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.array.cpp */; };
+		C04BA404DC47489898E6989E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.numeric.cpp */ = {isa = PBXBuildFile; fileRef = 9576CE22218745079E1CEA41 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.numeric.cpp */; };
+		CD20719F38DC4671A1439351 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 945D7B21DCE64F8E9CC80DAC /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/CMakeLists.txt */; };
+		D0C5AAC426B640D4A16AA24D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cache.cpp */ = {isa = PBXBuildFile; fileRef = 36F15E818861482594F14E9B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cache.cpp */; };
+		DDCF52C76EC24CB982D5ECAD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/validator.cpp */ = {isa = PBXBuildFile; fileRef = 280163FA9C4343AAB4F2A1D4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/validator.cpp */; };
+		E199B46B62F6405898124E54 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.string.cpp */ = {isa = PBXBuildFile; fileRef = E8AE5CA0298342C5A1099847 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.string.cpp */; };
+		E27EDE93F17544DDB97BBF21 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/assertions.cpp */ = {isa = PBXBuildFile; fileRef = 822487A2F77746CE90890A1E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/assertions.cpp */; };
+		E31358E1241C470EA5F7301C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cpp */ = {isa = PBXBuildFile; fileRef = F5B065B7E4DC4D559F1E6876 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cpp */; };
+		E736FC2BC3784E7BA463ED60 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/annotations.cpp */ = {isa = PBXBuildFile; fileRef = FB789C4B8501450BAF4D43DA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/annotations.cpp */; };
+		EC794491A05F4FAEB492C9C2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = AA65895644F84F00AC0EC572 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		16B1B7EA8F724BE2948FA33F /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		9829AB5D9DD0434F96E9E397 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		B73354C3FAC44A79922B4E10 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		E5A8BB1D93C44FCC87CCA19F /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1AE61ED1311E4130AA370DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CC7AF147234C128BDDD115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72EF43544CFE41678E878464;
+			remoteInfo = ALL_BUILD;
+		};
+		2328A45D3E614C9AAFF2D4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CC7AF147234C128BDDD115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC202925550147D798510A80;
+			remoteInfo = "f5-json-schema";
+		};
+		5B15805629B94DD8B62EC694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CC7AF147234C128BDDD115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC202925550147D798510A80;
+			remoteInfo = "f5-json-schema";
+		};
+		68B26D08795B4C42AE3899A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CC7AF147234C128BDDD115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A68ED7829044CF3AC193E64;
+			remoteInfo = "json-schema-validator";
+		};
+		77A6F3BCA6094BD1BD58141F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CC7AF147234C128BDDD115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A68ED7829044CF3AC193E64;
+			remoteInfo = "json-schema-validator";
+		};
+		DEA66EBFB3F14CFBBE42527D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CC7AF147234C128BDDD115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC202925550147D798510A80;
+			remoteInfo = "f5-json-schema";
+		};
+		E5FAB89265DD49928D1245CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CC7AF147234C128BDDD115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A5DBF7DEDD1478DAC4DC8DF /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/validator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = validator.cpp; path = test/headers/validator.cpp; sourceTree = SOURCE_ROOT; };
+		1B27B60F6A7848FFBCFF7952 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/alltypes.schema.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = alltypes.schema.json; path = test/checks/alltypes.schema.json; sourceTree = SOURCE_ROOT; };
+		280163FA9C4343AAB4F2A1D4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/validator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = validator.cpp; path = src/validator.cpp; sourceTree = SOURCE_ROOT; };
+		36F15E818861482594F14E9B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = schema.cache.cpp; path = src/schema.cache.cpp; sourceTree = SOURCE_ROOT; };
+		3D0CFECB8808456689A79346 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.loaders.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = schema.loaders.cpp; path = src/schema.loaders.cpp; sourceTree = SOURCE_ROOT; };
+		53CCC6E49D404D22A3B62167 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = schema.cache.cpp; path = test/headers/schema.cache.cpp; sourceTree = SOURCE_ROOT; };
+		565AC79B4BA44818B411167D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6DDEEA48FBC14CDD9F43B38F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/valid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = valid.cpp; path = "json-schema-validator/valid.cpp"; sourceTree = SOURCE_ROOT; };
+		6FD56D8D008548279997C51A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.object.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = assertions.object.cpp; path = src/assertions.object.cpp; sourceTree = SOURCE_ROOT; };
+		717B0A4EB40C4CC690A474F1 /* json-schema-validator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "json-schema-validator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		756DC34E2FAF47258F53FAE4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/null.schema.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = null.schema.json; path = test/checks/null.schema.json; sourceTree = SOURCE_ROOT; };
+		7A347AF3B598445C9B612336 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/checks/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		822487A2F77746CE90890A1E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/assertions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = assertions.cpp; path = test/headers/assertions.cpp; sourceTree = SOURCE_ROOT; };
+		9158744AFB0744648D992E96 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.array.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = assertions.array.cpp; path = src/assertions.array.cpp; sourceTree = SOURCE_ROOT; };
+		945D7B21DCE64F8E9CC80DAC /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/headers/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9576CE22218745079E1CEA41 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.numeric.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = assertions.numeric.cpp; path = src/assertions.numeric.cpp; sourceTree = SOURCE_ROOT; };
+		9646EC7087B24291B2307A63 /* json-schema-headers-tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libjson-schema-headers-tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA65895644F84F00AC0EC572 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "json-schema-validator/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		B3C0F048BE214D42928DE5D1 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/any.schema.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = any.schema.json; path = test/checks/any.schema.json; sourceTree = SOURCE_ROOT; };
+		B8D9132D423A4F328DCB5ADA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = schema.cpp; path = src/schema.cpp; sourceTree = SOURCE_ROOT; };
+		B9EB628D893F48EB91A0C066 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/json-schema.schema.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "json-schema.schema.json"; path = "test/checks/json-schema.schema.json"; sourceTree = SOURCE_ROOT; };
+		C3EC0044A485420698443E2F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = assertions.cpp; path = src/assertions.cpp; sourceTree = SOURCE_ROOT; };
+		D7C7FBABA8134198915B8A3B /* f5-json-schema */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libf5-json-schema.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBF293E6BF94F4387652E2B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.loaders.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = schema.loaders.cpp; path = test/headers/schema.loaders.cpp; sourceTree = SOURCE_ROOT; };
+		E8AE5CA0298342C5A1099847 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = assertions.string.cpp; path = src/assertions.string.cpp; sourceTree = SOURCE_ROOT; };
+		ED9C825776AF455A83DD4156 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/invalid.schema.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = invalid.schema.json; path = test/checks/invalid.schema.json; sourceTree = SOURCE_ROOT; };
+		F5B065B7E4DC4D559F1E6876 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = schema.cpp; path = test/headers/schema.cpp; sourceTree = SOURCE_ROOT; };
+		F6C518E4F91840B8802771D5 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FB789C4B8501450BAF4D43DA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/annotations.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = annotations.cpp; path = src/annotations.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		072777723679464AA9EE63F0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2506C58B6CA44855A2AD3090 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2540D939881B46A5840FAD1B /* json-schema-tests */ = {
+			isa = PBXGroup;
+			children = (
+				2506C58B6CA44855A2AD3090 /* CMake Rules */,
+				B3C0F048BE214D42928DE5D1 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/any.schema.json */,
+				ED9C825776AF455A83DD4156 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/invalid.schema.json */,
+				1B27B60F6A7848FFBCFF7952 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/alltypes.schema.json */,
+				756DC34E2FAF47258F53FAE4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/null.schema.json */,
+				B9EB628D893F48EB91A0C066 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/json-schema.schema.json */,
+				7A347AF3B598445C9B612336 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/checks/CMakeLists.txt */,
+			);
+			name = "json-schema-tests";
+			sourceTree = "<group>";
+		};
+		34851A0975D84A07B2A40106 /* json-schema-validator */ = {
+			isa = PBXGroup;
+			children = (
+				EAD595FF21B44B0399980280 /* Source Files */,
+				AA65895644F84F00AC0EC572 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/CMakeLists.txt */,
+			);
+			name = "json-schema-validator";
+			sourceTree = "<group>";
+		};
+		3892F49EDC6C447197CD6D08 /* f5-json-schema */ = {
+			isa = PBXGroup;
+			children = (
+				CC98447AB4E04D3A9B395D0F /* Source Files */,
+				565AC79B4BA44818B411167D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/CMakeLists.txt */,
+			);
+			name = "f5-json-schema";
+			sourceTree = "<group>";
+		};
+		51B2F2AD455142C6AB005929 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				822487A2F77746CE90890A1E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/assertions.cpp */,
+				53CCC6E49D404D22A3B62167 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cache.cpp */,
+				F5B065B7E4DC4D559F1E6876 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cpp */,
+				DBBF293E6BF94F4387652E2B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.loaders.cpp */,
+				0A5DBF7DEDD1478DAC4DC8DF /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/validator.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		648702685CF043D5BB2B53A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				717B0A4EB40C4CC690A474F1 /* json-schema-validator */,
+				D7C7FBABA8134198915B8A3B /* f5-json-schema */,
+				9646EC7087B24291B2307A63 /* json-schema-headers-tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B70EDFE3C684F10B744244E /* json-schema-headers-tests */ = {
+			isa = PBXGroup;
+			children = (
+				51B2F2AD455142C6AB005929 /* Source Files */,
+				945D7B21DCE64F8E9CC80DAC /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/CMakeLists.txt */,
+			);
+			name = "json-schema-headers-tests";
+			sourceTree = "<group>";
+		};
+		CC98447AB4E04D3A9B395D0F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB789C4B8501450BAF4D43DA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/annotations.cpp */,
+				9158744AFB0744648D992E96 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.array.cpp */,
+				C3EC0044A485420698443E2F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.cpp */,
+				9576CE22218745079E1CEA41 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.numeric.cpp */,
+				6FD56D8D008548279997C51A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.object.cpp */,
+				E8AE5CA0298342C5A1099847 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.string.cpp */,
+				36F15E818861482594F14E9B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cache.cpp */,
+				B8D9132D423A4F328DCB5ADA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cpp */,
+				3D0CFECB8808456689A79346 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.loaders.cpp */,
+				280163FA9C4343AAB4F2A1D4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/validator.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E6165C24052346A0A999FC82 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				072777723679464AA9EE63F0 /* CMake Rules */,
+				F6C518E4F91840B8802771D5 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		EAD595FF21B44B0399980280 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DDEEA48FBC14CDD9F43B38F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/valid.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EBD0D617227B4C26A6CBBC09 = {
+			isa = PBXGroup;
+			children = (
+				E6165C24052346A0A999FC82 /* ALL_BUILD */,
+				34851A0975D84A07B2A40106 /* json-schema-validator */,
+				3892F49EDC6C447197CD6D08 /* f5-json-schema */,
+				2540D939881B46A5840FAD1B /* json-schema-tests */,
+				6B70EDFE3C684F10B744244E /* json-schema-headers-tests */,
+				648702685CF043D5BB2B53A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A68ED7829044CF3AC193E64 /* json-schema-validator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D4F11B0DB54FBDB1FB5DD2 /* Build configuration list for PBXNativeTarget "json-schema-validator" */;
+			buildPhases = (
+				198D4C4383064B57A98282C1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ECD90D0A3BA45D1BD7CFB9B /* PBXTargetDependency */,
+			);
+			name = "json-schema-validator";
+			productName = "json-schema-validator";
+			productReference = 717B0A4EB40C4CC690A474F1 /* json-schema-validator */;
+			productType = "com.apple.product-type.tool";
+		};
+		B0E6E716564F4D1D9D593153 /* json-schema-headers-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEB5CF37AFBC45118990DA68 /* Build configuration list for PBXNativeTarget "json-schema-headers-tests" */;
+			buildPhases = (
+				C0C446CD91634D349041BB81 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9CDBB9503274934810AC5AE /* PBXTargetDependency */,
+			);
+			name = "json-schema-headers-tests";
+			productName = "json-schema-headers-tests";
+			productReference = 9646EC7087B24291B2307A63 /* json-schema-headers-tests */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CC202925550147D798510A80 /* f5-json-schema */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A99FB0E64E34171B2AA9BE7 /* Build configuration list for PBXNativeTarget "f5-json-schema" */;
+			buildPhases = (
+				7111FAFEB62B444CBCD4CA65 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "f5-json-schema";
+			productName = "f5-json-schema";
+			productReference = D7C7FBABA8134198915B8A3B /* f5-json-schema */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24CC7AF147234C128BDDD115 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 25A5713F57664479BB337775 /* Build configuration list for PBXProject "f5-json-schema" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				16B1B7EA8F724BE2948FA33F /* Debug */,
+				B73354C3FAC44A79922B4E10 /* Release */,
+				9829AB5D9DD0434F96E9E397 /* MinSizeRel */,
+				E5A8BB1D93C44FCC87CCA19F /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = EBD0D617227B4C26A6CBBC09;
+			projectDirPath = "/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema";
+			projectRoot = "";
+			targets = (
+				72EF43544CFE41678E878464 /* ALL_BUILD */,
+				2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */,
+				E4C19B3BD8EF408897C6D1CE /* install */,
+				6A68ED7829044CF3AC193E64 /* json-schema-validator */,
+				CC202925550147D798510A80 /* f5-json-schema */,
+				47749EF584F44899BF34F0D6 /* json-schema-tests */,
+				B0E6E716564F4D1D9D593153 /* json-schema-headers-tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		133A784B7FA54143B0F9F881 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		28DA8276613C43E68F05127F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		693FC89B10E04647B08901E8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/checks -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/checks/CMakeScripts/json-schema-tests_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6E1F1A0EB377435EB5056B07 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		AF01AB602D1647819224E617 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B0871F141C394F1E82BB7787 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		BFA73791BD734AC585E9A702 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F6742375B60B4A2B9316ED53 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		198D4C4383064B57A98282C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF74FCE7C3745BEA43524DA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/json-schema-validator/valid.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7111FAFEB62B444CBCD4CA65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E736FC2BC3784E7BA463ED60 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/annotations.cpp */,
+				BF3919A8F56C4513A2C5C692 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.array.cpp */,
+				05993C63C3C54D1897BC32B5 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.cpp */,
+				C04BA404DC47489898E6989E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.numeric.cpp */,
+				1B5548A0CC6447048F492AFD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.object.cpp */,
+				E199B46B62F6405898124E54 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/assertions.string.cpp */,
+				D0C5AAC426B640D4A16AA24D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cache.cpp */,
+				4967DAD6FDC84EE193F52AFD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.cpp */,
+				86A640A719424F3D8DBF24AA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/schema.loaders.cpp */,
+				DDCF52C76EC24CB982D5ECAD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/validator.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C446CD91634D349041BB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27EDE93F17544DDB97BBF21 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/assertions.cpp */,
+				23F4F571234440D98771B18E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cache.cpp */,
+				E31358E1241C470EA5F7301C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.cpp */,
+				23620BEE65E14797A34F5BA5 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/schema.loaders.cpp */,
+				50791CDEA8CD4C1BB7270D1B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/test/headers/validator.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F4608FC00EE422F9410C056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A68ED7829044CF3AC193E64 /* json-schema-validator */;
+			targetProxy = 77A6F3BCA6094BD1BD58141F /* PBXContainerItemProxy */;
+		};
+		4ECD90D0A3BA45D1BD7CFB9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC202925550147D798510A80 /* f5-json-schema */;
+			targetProxy = DEA66EBFB3F14CFBBE42527D /* PBXContainerItemProxy */;
+		};
+		8EF68DD485024995A84B1842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = E5FAB89265DD49928D1245CC /* PBXContainerItemProxy */;
+		};
+		BBB541C8FFE74AC39360E9BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC202925550147D798510A80 /* f5-json-schema */;
+			targetProxy = 5B15805629B94DD8B62EC694 /* PBXContainerItemProxy */;
+		};
+		D9CDBB9503274934810AC5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC202925550147D798510A80 /* f5-json-schema */;
+			targetProxy = 2328A45D3E614C9AAFF2D4C7 /* PBXContainerItemProxy */;
+		};
+		DAB12ED83D5849789B618B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72EF43544CFE41678E878464 /* ALL_BUILD */;
+			targetProxy = 1AE61ED1311E4130AA370DF9 /* PBXContainerItemProxy */;
+		};
+		E0F2F759F94B475D91B6C804 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A68ED7829044CF3AC193E64 /* json-schema-validator */;
+			targetProxy = 68B26D08795B4C42AE3899A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BC5C9FAD07043B58EE35E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0E8E70019A114B7B8B0C4F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		10AB40C3FEFE43379EB9B8FF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/checks";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		159FB4A5F95F427CB31DC6BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/checks";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1FE53E5CE8C74691867E22FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,"/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-color -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-cli/Debug/libfost-cli-d.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/src/Debug/libf5-json-schema.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/internet/Cpp/fost-inet/Debug/libfost-inet-d.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-crypto/Debug/libfost-crypto-d.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-core/Debug/libfost-core-d.a -ldl /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_date_time.a /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_filesystem.a /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_system.a    /Users/hotnow/TESTTHINGS/cpp/fost/crypto/Debug/libcrypto++.a -lcrypto -lssl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-validator";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/json-schema-validator";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3C6FD54593E54CCF96794639 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		45ADAE1AD71246D8906F30B3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		48BF682AF65A451CB5CABE8F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/checks";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5AD2B3005F7F47DDB0D6E22A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/build";
+			};
+			name = RelWithDebInfo;
+		};
+		5E92FE6F63C64B82872CD831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/build";
+			};
+			name = Release;
+		};
+		6937FE62E4CD41F987763B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.,"/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/headers";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		69911D767AFE47E988689CD0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,"/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-color -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-cli/MinSizeRel/libfost-cli.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/src/MinSizeRel/libf5-json-schema.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/internet/Cpp/fost-inet/MinSizeRel/libfost-inet.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-crypto/MinSizeRel/libfost-crypto.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-core/MinSizeRel/libfost-core.a -ldl /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_date_time.a /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_filesystem.a /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_system.a    /Users/hotnow/TESTTHINGS/cpp/fost/crypto/MinSizeRel/libcrypto++.a -lcrypto -lssl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-validator";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/json-schema-validator";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6E96D16AF303428693DBC92A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		85979386E30341E9A64BC5A0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,"/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-color -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-cli/RelWithDebInfo/libfost-cli.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/src/RelWithDebInfo/libf5-json-schema.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/internet/Cpp/fost-inet/RelWithDebInfo/libfost-inet.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-crypto/RelWithDebInfo/libfost-crypto.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-core/RelWithDebInfo/libfost-core.a -ldl /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_date_time.a /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_filesystem.a /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_system.a    /Users/hotnow/TESTTHINGS/cpp/fost/crypto/RelWithDebInfo/libcrypto++.a -lcrypto -lssl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-validator";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/json-schema-validator";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		865B12EC6D88432BA96D54C6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/build";
+			};
+			name = MinSizeRel;
+		};
+		874DDA0D5A824C049A329A7C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.,"/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-json-schema";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		91E363B0989E4C88B3EBB843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		922B6008F1914116B6F63386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,"/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-color -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-cli/Release/libfost-cli.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/src/Release/libf5-json-schema.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/internet/Cpp/fost-inet/Release/libfost-inet.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-crypto/Release/libfost-crypto.a /Users/hotnow/TESTTHINGS/cpp/fost/fost/base/Cpp/fost-core/Release/libfost-core.a -ldl /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_date_time.a /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_filesystem.a /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_system.a    /Users/hotnow/TESTTHINGS/cpp/fost/crypto/Release/libcrypto++.a -lcrypto -lssl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-validator";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/json-schema-validator";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		927C8566357E4A6982D65505 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.,"/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-json-schema";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9ACC191EF57B43E3B41B4B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.,"/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-json-schema";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9E28C24013794E1C84502F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/build";
+			};
+			name = Debug;
+		};
+		A5342D07B32749649452EC12 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B09412FA83C144E9A3CD4F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.,"/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/headers";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B74082C184984259A326D148 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.,"/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/headers";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B7979155EE2541139E9F430E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C5BD590112AA4586A8A67976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D0C4F44CFBEF4085845C12F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.,"/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-json-schema";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D473E03CBE1A4FD6A8883B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E7A2A55A255B4C6CAAF57E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/checks";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EE9DFADCB3FC44838CF7C8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		FA9C8319436B40CFB5A2B00F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost/json-schema/src/../include","/Users/hotnow/TESTTHINGS/cpp/src/fost/internet/Cpp/fost-inet/../include",/Users/hotnow/TESTTHINGS/cpp/src/../../callSwiftFormCPP/Pods/BoringSSL/include,/Users/hotnow/TESTTHINGS/cpp/src/crypto/.,"/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -maes -mpclmul -msha '-msse4.1' '-msse4.2' -mssse3 -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "json-schema-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema/test/headers";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FD644E04C4984BA9BD0E7E88 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost/json-schema";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D4F11B0DB54FBDB1FB5DD2 /* Build configuration list for PBXNativeTarget "json-schema-validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE53E5CE8C74691867E22FC /* Debug */,
+				922B6008F1914116B6F63386 /* Release */,
+				69911D767AFE47E988689CD0 /* MinSizeRel */,
+				85979386E30341E9A64BC5A0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		25A5713F57664479BB337775 /* Build configuration list for PBXProject "f5-json-schema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E28C24013794E1C84502F82 /* Debug */,
+				5E92FE6F63C64B82872CD831 /* Release */,
+				865B12EC6D88432BA96D54C6 /* MinSizeRel */,
+				5AD2B3005F7F47DDB0D6E22A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3A99FB0E64E34171B2AA9BE7 /* Build configuration list for PBXNativeTarget "f5-json-schema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACC191EF57B43E3B41B4B89 /* Debug */,
+				D0C4F44CFBEF4085845C12F9 /* Release */,
+				927C8566357E4A6982D65505 /* MinSizeRel */,
+				874DDA0D5A824C049A329A7C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6927133B7E534BD5B356F3C8 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E8E70019A114B7B8B0C4F03 /* Debug */,
+				91E363B0989E4C88B3EBB843 /* Release */,
+				6E96D16AF303428693DBC92A /* MinSizeRel */,
+				3C6FD54593E54CCF96794639 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		760118DFF22F4EBEA2C61A7E /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5BD590112AA4586A8A67976 /* Debug */,
+				0BC5C9FAD07043B58EE35E63 /* Release */,
+				A5342D07B32749649452EC12 /* MinSizeRel */,
+				45ADAE1AD71246D8906F30B3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AEB5CF37AFBC45118990DA68 /* Build configuration list for PBXNativeTarget "json-schema-headers-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6937FE62E4CD41F987763B8A /* Debug */,
+				B09412FA83C144E9A3CD4F58 /* Release */,
+				FA9C8319436B40CFB5A2B00F /* MinSizeRel */,
+				B74082C184984259A326D148 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C455188F156749E3BFFBE6D3 /* Build configuration list for PBXAggregateTarget "json-schema-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				159FB4A5F95F427CB31DC6BB /* Debug */,
+				E7A2A55A255B4C6CAAF57E0D /* Release */,
+				10AB40C3FEFE43379EB9B8FF /* MinSizeRel */,
+				48BF682AF65A451CB5CABE8F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC48943012DC40F191BF7684 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9DFADCB3FC44838CF7C8BA /* Debug */,
+				D473E03CBE1A4FD6A8883B51 /* Release */,
+				B7979155EE2541139E9F430E /* MinSizeRel */,
+				FD644E04C4984BA9BD0E7E88 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24CC7AF147234C128BDDD115 /* Project object */;
+}

@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 312D32DB2DFD40B297407392 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				BF7E91660AC1415DAE39A366 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		72EF43544CFE41678E878464 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09CB094B1C474E949CCB4345 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				0C8359CD11A5481EAE7942DA /* CMake Rules */,
+			);
+			dependencies = (
+				56685B3BE9EF4BEDA6E5B48D /* PBXTargetDependency */,
+				AF86BF61FFFB405989BFE488 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		E4C19B3BD8EF408897C6D1CE /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5385C1FD895A4C2D83484529 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				C027103648544325B5EB1EEA /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				3EA0F23B663F4BAA94F67172 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1E6A82D004634FE2B5B17C1E /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 629DA279AC6D4CB899615406 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/CMakeLists.txt */; };
+		3439E10CE590448ABF2EAEAC /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/dirent.c */ = {isa = PBXBuildFile; fileRef = 5B6CB247A2EC4567A0124C25 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/dirent.c */; };
+		37D120E7514D42259CD7EDE0 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/settings.mm */ = {isa = PBXBuildFile; fileRef = C2A02E1C281C4E938CA820BC /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/settings.mm */; };
+		5EB2AF580D8940EA8203A6BD /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/webserver.mm */ = {isa = PBXBuildFile; fileRef = 68E643A0C7664586AACD8932 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/webserver.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2B06191F030045E386246E8E /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		BE409F9113794B1E974C65A1 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		D57EE380921E4CB3AB4DBF43 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		FC99AFF4501D4621800CAE0B /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		39671125D20748B7ADCB4759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82B47CC8C0314642A4C57C9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		9FD02C4098DE40EFAC40025E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82B47CC8C0314642A4C57C9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		D44494B7764A4E0E881AF120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82B47CC8C0314642A4C57C9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CEE34598AE047E28E7C419F;
+			remoteInfo = "fost-swift";
+		};
+		FFFD0C223FCD4FD690184800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82B47CC8C0314642A4C57C9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72EF43544CFE41678E878464;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D1C3D3CA80F4859A3E66A8A /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5B6CB247A2EC4567A0124C25 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/dirent.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dirent.c; path = src/dirent.c; sourceTree = SOURCE_ROOT; };
+		629DA279AC6D4CB899615406 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		68E643A0C7664586AACD8932 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/webserver.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = webserver.mm; path = src/webserver.mm; sourceTree = SOURCE_ROOT; };
+		BFCAA1FF980540CBAE2771FB /* fost-swift */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libfost-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A02E1C281C4E938CA820BC /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/settings.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = settings.mm; path = src/settings.mm; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3B8C414B9FA548BB8E3886C5 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				E46EC8C1C3CF42D28E534484 /* CMake Rules */,
+				1D1C3D3CA80F4859A3E66A8A /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		50C683ED256747C4BAC3FA74 /* fost-swift */ = {
+			isa = PBXGroup;
+			children = (
+				DCA1B295D6C843D9928A8DB6 /* Source Files */,
+				629DA279AC6D4CB899615406 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/CMakeLists.txt */,
+			);
+			name = "fost-swift";
+			sourceTree = "<group>";
+		};
+		59C95F6B65B449D6A74F72BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFCAA1FF980540CBAE2771FB /* fost-swift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0F52688BF2348DE921FB1B7 = {
+			isa = PBXGroup;
+			children = (
+				50C683ED256747C4BAC3FA74 /* fost-swift */,
+				3B8C414B9FA548BB8E3886C5 /* ALL_BUILD */,
+				59C95F6B65B449D6A74F72BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCA1B295D6C843D9928A8DB6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B6CB247A2EC4567A0124C25 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/dirent.c */,
+				C2A02E1C281C4E938CA820BC /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/settings.mm */,
+				68E643A0C7664586AACD8932 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/webserver.mm */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E46EC8C1C3CF42D28E534484 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CEE34598AE047E28E7C419F /* fost-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA1C0AD0A204E4E8BA4AF5C /* Build configuration list for PBXNativeTarget "fost-swift" */;
+			buildPhases = (
+				97047C17383F4C51A554DCC7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FFAE672B1AD4E05BC9F2B24 /* PBXTargetDependency */,
+			);
+			name = "fost-swift";
+			productName = "fost-swift";
+			productReference = BFCAA1FF980540CBAE2771FB /* fost-swift */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82B47CC8C0314642A4C57C9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 45EE4E28E662450A8D265062 /* Build configuration list for PBXProject "fost-swift" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2B06191F030045E386246E8E /* Debug */,
+				BE409F9113794B1E974C65A1 /* Release */,
+				D57EE380921E4CB3AB4DBF43 /* MinSizeRel */,
+				FC99AFF4501D4621800CAE0B /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = B0F52688BF2348DE921FB1B7;
+			projectDirPath = "/Users/hotnow/TESTTHINGS/cpp/src/fost-swift";
+			projectRoot = "";
+			targets = (
+				72EF43544CFE41678E878464 /* ALL_BUILD */,
+				2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */,
+				6CEE34598AE047E28E7C419F /* fost-swift */,
+				E4C19B3BD8EF408897C6D1CE /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C8359CD11A5481EAE7942DA /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost-swift -f /Users/hotnow/TESTTHINGS/cpp/fost/fost-swift/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		693EE7F5BD50421593BA8290 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		BF7E91660AC1415DAE39A366 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost-swift -f /Users/hotnow/TESTTHINGS/cpp/fost/fost-swift/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C027103648544325B5EB1EEA /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost-swift -f /Users/hotnow/TESTTHINGS/cpp/fost/fost-swift/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E58DA911FD2448A09FAB1B37 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F12C6D8298134D83956A6530 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97047C17383F4C51A554DCC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3439E10CE590448ABF2EAEAC /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/dirent.c */,
+				37D120E7514D42259CD7EDE0 /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/settings.mm */,
+				5EB2AF580D8940EA8203A6BD /* /Users/hotnow/TESTTHINGS/cpp/src/fost-swift/src/webserver.mm */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EA0F23B663F4BAA94F67172 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72EF43544CFE41678E878464 /* ALL_BUILD */;
+			targetProxy = FFFD0C223FCD4FD690184800 /* PBXContainerItemProxy */;
+		};
+		4FFAE672B1AD4E05BC9F2B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 39671125D20748B7ADCB4759 /* PBXContainerItemProxy */;
+		};
+		56685B3BE9EF4BEDA6E5B48D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CEE34598AE047E28E7C419F /* fost-swift */;
+			targetProxy = D44494B7764A4E0E881AF120 /* PBXContainerItemProxy */;
+		};
+		AF86BF61FFFB405989BFE488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 9FD02C4098DE40EFAC40025E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07827F9C750A48D89BFEB89A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost-swift/include","/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fdiagnostics-color  ";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "fost-swift";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		0B3AF007B7D94467B91CE481 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift/build";
+			};
+			name = MinSizeRel;
+		};
+		0D0233943FC445F09D6B79D3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1541C4964C0F4C879ABE8C83 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1FD3401D730348B6B177F46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		27A39E3B29D44C95A1CD0EB3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		37ACE849BCAB4AF1B3E61855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost-swift/include","/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fdiagnostics-color  ";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "fost-swift";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		3D8D868CA90C440FA8D9BECD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		451B69CC341F4E7B8B7E33AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4E0FC22938044E3EA7E676C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4E57250BDB4743AABDB09345 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		662D98F46C854E2A83C60D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6855E167CC1B479D9C2BC036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7E6E57AFC4ED473FB77AD806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift/build";
+			};
+			name = Release;
+		};
+		A19C063854064544A62CACBE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost-swift/include","/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fdiagnostics-color  ";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "fost-swift";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AFA5F531624E4F4A85905AA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift/build";
+			};
+			name = Debug;
+		};
+		C6C22C3BB93E4146A1DD38BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D10E271C75BC4DDC812EA3EA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F4EA7A1D10974EE7ACDFD3DB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift/build";
+			};
+			name = RelWithDebInfo;
+		};
+		FA34D10E1F894C9394876ABD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/hotnow/TESTTHINGS/cpp/src/fost-swift/include","/Users/hotnow/TESTTHINGS/cpp/src/fost/base/Cpp/fost-core/../include",/Users/hotnow/TESTTHINGS/cpp/src/boost/date_time/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/filesystem/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include,/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fdiagnostics-color  ";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-color '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "fost-swift";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/hotnow/TESTTHINGS/cpp/fost/fost-swift";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09CB094B1C474E949CCB4345 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				662D98F46C854E2A83C60D53 /* Debug */,
+				1FD3401D730348B6B177F46D /* Release */,
+				27A39E3B29D44C95A1CD0EB3 /* MinSizeRel */,
+				0D0233943FC445F09D6B79D3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		312D32DB2DFD40B297407392 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0FC22938044E3EA7E676C6 /* Debug */,
+				6855E167CC1B479D9C2BC036 /* Release */,
+				4E57250BDB4743AABDB09345 /* MinSizeRel */,
+				3D8D868CA90C440FA8D9BECD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		45EE4E28E662450A8D265062 /* Build configuration list for PBXProject "fost-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA5F531624E4F4A85905AA6 /* Debug */,
+				7E6E57AFC4ED473FB77AD806 /* Release */,
+				0B3AF007B7D94467B91CE481 /* MinSizeRel */,
+				F4EA7A1D10974EE7ACDFD3DB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5385C1FD895A4C2D83484529 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451B69CC341F4E7B8B7E33AA /* Debug */,
+				C6C22C3BB93E4146A1DD38BB /* Release */,
+				1541C4964C0F4C879ABE8C83 /* MinSizeRel */,
+				D10E271C75BC4DDC812EA3EA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9BA1C0AD0A204E4E8BA4AF5C /* Build configuration list for PBXNativeTarget "fost-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07827F9C750A48D89BFEB89A /* Debug */,
+				37ACE849BCAB4AF1B3E61855 /* Release */,
+				A19C063854064544A62CACBE /* MinSizeRel */,
+				FA34D10E1F894C9394876ABD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82B47CC8C0314642A4C57C9B /* Project object */;
+}

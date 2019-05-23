@@ -1,0 +1,2596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 05BD658770E740EC9DDABD36 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				59A34CCD8DF644059910CB4C /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		72EF43544CFE41678E878464 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E2A1E75DADED40DEBDA60A87 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				6EE699E0C14C485A87A1C147 /* CMake Rules */,
+			);
+			dependencies = (
+				2B044F44934B4921A16C92D0 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		80D2F13E534946B8B7191E28 /* f5-cord-fuzz */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FD81D837301347099D34F9BF /* Build configuration list for PBXAggregateTarget "f5-cord-fuzz" */;
+			buildPhases = (
+			);
+			dependencies = (
+				2028FB22C7D649D2B4A8C42D /* PBXTargetDependency */,
+			);
+			name = "f5-cord-fuzz";
+			productName = "f5-cord-fuzz";
+		};
+		E4C19B3BD8EF408897C6D1CE /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0D80F41EB3384768BEB6C041 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				04874CC28BD743948F17EE91 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				E3A6A9D58AC34A4A9ED4523C /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		228984FB657940269FAA10D2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-core.cpp */ = {isa = PBXBuildFile; fileRef = 83ED29B588AF4C11B2764C6E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-core.cpp */; };
+		2A23FCB2DE414E09B6FA9C04 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-iterators.cpp */ = {isa = PBXBuildFile; fileRef = 86DCEE00EA9E4431B68D7910 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-iterators.cpp */; };
+		2ABDC7BA142448F38EDC44C2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-view.cpp */ = {isa = PBXBuildFile; fileRef = 7393CB429B6843C2AF292814 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-view.cpp */; };
+		31B926E674DD49E1B4137843 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/memory.cpp */ = {isa = PBXBuildFile; fileRef = 49B23D0FBD694993BA18B473 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/memory.cpp */; };
+		326350466CF54737BC3D47FA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2B77E335D781461AAAA4BC04 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */; };
+		3FCEDD3FBB4547C09EBC2DF1 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring-compare.cpp */ = {isa = PBXBuildFile; fileRef = A9B44304964541C997E6A4DF /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring-compare.cpp */; };
+		41BFD926B41648B2853BAA7B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/iostream.cpp */ = {isa = PBXBuildFile; fileRef = 6ED75A01A59D4AA18902DE0C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/iostream.cpp */; };
+		4E3E9A86A7E24354812B5A91 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/u8loader.cpp */ = {isa = PBXBuildFile; fileRef = 9D9B7B26CA64491892890092 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/u8loader.cpp */; };
+		4E94F566FBA14FD7B7DA9418 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 47B9AD4ECBE44DD08ACF6A5C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */; };
+		517C9D8345F147468927EAEF /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/memory.cpp */ = {isa = PBXBuildFile; fileRef = 1C06691E9A5B4F758214EF5E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/memory.cpp */; };
+		5626F55B1E1941F3AA80F2A6 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A8F9CD448AA44C2E953ABC22 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */; };
+		5A8F55F3D36B452AA009E6E2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7B5979CE2A314740A06E83BD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */; };
+		5E366D31F3A84346BC962446 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6EFD1D4BA415448C947EA242 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/CMakeLists.txt */; };
+		6CC962DDDBC24C278D6A1DB4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-string.cpp */ = {isa = PBXBuildFile; fileRef = 3F0EA7BD01DA40E7A1BC7E2D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-string.cpp */; };
+		6D30349206D0470FA9665858 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/tstring.cpp */ = {isa = PBXBuildFile; fileRef = 0E26E2DCBC4846F0AF60182E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/tstring.cpp */; };
+		836307F0416B472A94A1859E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/tstring.cpp */ = {isa = PBXBuildFile; fileRef = 794E8E9AC15A457D8A5979A4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/tstring.cpp */; };
+		873049B2371644EC80290893 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-std_string.cpp */ = {isa = PBXBuildFile; fileRef = D3C7AB5315C04B9290D93F99 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-std_string.cpp */; };
+		93BBD8DC961648DEA94283BE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-view.cpp */ = {isa = PBXBuildFile; fileRef = 03B60AF61C3E4321A5D5A2B2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-view.cpp */; };
+		9C7FD3AB1F2B489882B327E2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9CA53E5CC98A404DA21CA3C8 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */; };
+		A32DF02743044279BC5E00EE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-compare.cpp */ = {isa = PBXBuildFile; fileRef = 6F7E7C082A0B46D9871F5CF9 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-compare.cpp */; };
+		A975343F408A45A18CD6854C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-encodings.cpp */ = {isa = PBXBuildFile; fileRef = 84ABD9B38365419084CEDB7D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-encodings.cpp */; };
+		AD386C0290A44E3593B413FA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-check_valid.cpp */ = {isa = PBXBuildFile; fileRef = E970F236A9D44123AABA7F85 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-check_valid.cpp */; };
+		AD849BD7A2234D3BBDB04E4B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/lstring.cpp */ = {isa = PBXBuildFile; fileRef = CD5C3E668A2D4646A3AFC67A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/lstring.cpp */; };
+		AFF6F1335FFA4F019A13ADB7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-string.cpp */ = {isa = PBXBuildFile; fileRef = B869FF4E65D04E2AB0752936 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-string.cpp */; };
+		B3B6A956386E437DB8CFA6F1 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CC257132962C41A4BD54BC45 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/CMakeLists.txt */; };
+		B5BAF3408C0E48198669EB51 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 757E3B6A7294487DA007E260 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */; };
+		BABEF9C93EE24337AF9CEA3A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring.cpp */ = {isa = PBXBuildFile; fileRef = 1AC5FFE4639048289D6B8841 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring.cpp */; };
+		D445AECE1D3F4E1889917A1B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode.cpp */ = {isa = PBXBuildFile; fileRef = BEDB699B1F62401B8E3AC37B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode.cpp */; };
+		E360C16A0B3648D59BC14A15 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CB36094614724AFCB81BEB8F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/CMakeLists.txt */; };
+		EE13B04747AC4CE88854FAD6 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/unicode.cpp */ = {isa = PBXBuildFile; fileRef = AAAF04BA19E94142A493D6EE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/unicode.cpp */; };
+		F5B6BD0F4D734C5BB07B764D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/u8view.cpp */ = {isa = PBXBuildFile; fileRef = 5D3C6D079AC3443BA696250F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/u8view.cpp */; };
+		F812E6BAB83D4C36AF163754 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 13212E56E8234DADB93ACCF6 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */; };
+		F8EE27C04E24483986FC7435 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-encoding.cpp */ = {isa = PBXBuildFile; fileRef = 83A04BBA810447A2B1E95182 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-encoding.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1A9B433F6EAE44B2B59E5FFF /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		7BCA7D74CF544B9693A6EB35 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		B3182E158E7D4B7BAE4A9D98 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		EEE419B4180440C39BD1A828 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		044F8E8E901A479EBE1CEAFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72EF43544CFE41678E878464;
+			remoteInfo = ALL_BUILD;
+		};
+		139940963B5F4E3F9A7193B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		19000A3EA0464BF4B360CF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		2EAD3B81402C4B0480FC47C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		4498FDD4C5A64D28B7B61B4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		85F2BBA0F3D64AFC9B7C40DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		8BF5081536974C6FB9915E63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99084693082F45498FDD4F01;
+			remoteInfo = "f5-cord-fuzz-u8loader";
+		};
+		9DA644535F7F42538245A417 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		A0F9C35EC7404086803BD6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		B92D93AEB300460EA5A230FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		C1EE1A64F4EB432F97ECDB8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		D4FDAE67123944CBA9920108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		E00AC5AFFF32470C8A56A1B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A12056BCAB444D4B524F28B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B60AF61C3E4321A5D5A2B2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-view.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-view.cpp"; path = "test/headers/unicode-view.cpp"; sourceTree = SOURCE_ROOT; };
+		0C5964C1183D4F9E9860A05C /* cord-run-test-unicode-view */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cord-run-test-unicode-view"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E26E2DCBC4846F0AF60182E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/tstring.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tstring.cpp; path = test/headers/tstring.cpp; sourceTree = SOURCE_ROOT; };
+		0E580E109E00498AABCA013E /* cord-run-test-unicode-check_valid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cord-run-test-unicode-check_valid"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13212E56E8234DADB93ACCF6 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1AC5FFE4639048289D6B8841 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lstring.cpp; path = test/compile/lstring.cpp; sourceTree = SOURCE_ROOT; };
+		1C06691E9A5B4F758214EF5E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/memory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = memory.cpp; path = test/run/memory.cpp; sourceTree = SOURCE_ROOT; };
+		2B77E335D781461AAAA4BC04 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3F0EA7BD01DA40E7A1BC7E2D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-string.cpp"; path = "test/headers/unicode-string.cpp"; sourceTree = SOURCE_ROOT; };
+		47B9AD4ECBE44DD08ACF6A5C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		49B23D0FBD694993BA18B473 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/memory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = memory.cpp; path = test/compile/memory.cpp; sourceTree = SOURCE_ROOT; };
+		5278F054CF774688BB036248 /* cord-run-test-lstring-compare */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cord-run-test-lstring-compare"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5297422EB4AA494B877F9F7A /* cord-headers-tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libcord-headers-tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D3C6D079AC3443BA696250F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/u8view.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = u8view.cpp; path = test/compile/u8view.cpp; sourceTree = SOURCE_ROOT; };
+		60D98600DD05440397DE9C50 /* cord-run-test-unicode-encoding */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cord-run-test-unicode-encoding"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED75A01A59D4AA18902DE0C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/iostream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = iostream.cpp; path = test/headers/iostream.cpp; sourceTree = SOURCE_ROOT; };
+		6EFD1D4BA415448C947EA242 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/headers/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6F7E7C082A0B46D9871F5CF9 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-compare.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "lstring-compare.cpp"; path = "test/run/lstring-compare.cpp"; sourceTree = SOURCE_ROOT; };
+		7393CB429B6843C2AF292814 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-view.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-view.cpp"; path = "test/run/unicode-view.cpp"; sourceTree = SOURCE_ROOT; };
+		757E3B6A7294487DA007E260 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		794E8E9AC15A457D8A5979A4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/tstring.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tstring.cpp; path = test/compile/tstring.cpp; sourceTree = SOURCE_ROOT; };
+		7B5979CE2A314740A06E83BD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7C27498A4B7440A88D554549 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/fuzz/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		83A04BBA810447A2B1E95182 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-encoding.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-encoding.cpp"; path = "test/run/unicode-encoding.cpp"; sourceTree = SOURCE_ROOT; };
+		83ED29B588AF4C11B2764C6E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-core.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-core.cpp"; path = "test/headers/unicode-core.cpp"; sourceTree = SOURCE_ROOT; };
+		84ABD9B38365419084CEDB7D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-encodings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-encodings.cpp"; path = "test/headers/unicode-encodings.cpp"; sourceTree = SOURCE_ROOT; };
+		86DCEE00EA9E4431B68D7910 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-iterators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-iterators.cpp"; path = "test/headers/unicode-iterators.cpp"; sourceTree = SOURCE_ROOT; };
+		9C608FF195034248B96186E6 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9CA53E5CC98A404DA21CA3C8 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9D9B7B26CA64491892890092 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/u8loader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = u8loader.cpp; path = test/fuzz/u8loader.cpp; sourceTree = SOURCE_ROOT; };
+		A8F9CD448AA44C2E953ABC22 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A9B44304964541C997E6A4DF /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring-compare.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "lstring-compare.cpp"; path = "test/compile/lstring-compare.cpp"; sourceTree = SOURCE_ROOT; };
+		AAAF04BA19E94142A493D6EE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/unicode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = unicode.cpp; path = test/compile/unicode.cpp; sourceTree = SOURCE_ROOT; };
+		B03A74E6170E4860AE99F204 /* cord-run-test-memory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cord-run-test-memory"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B869FF4E65D04E2AB0752936 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-string.cpp"; path = "test/run/unicode-string.cpp"; sourceTree = SOURCE_ROOT; };
+		BEDB699B1F62401B8E3AC37B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = unicode.cpp; path = test/headers/unicode.cpp; sourceTree = SOURCE_ROOT; };
+		CB36094614724AFCB81BEB8F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/fuzz/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CB8D23029D994E1F900F2DEF /* f5-cord-fuzz-u8loader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "f5-cord-fuzz-u8loader"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC257132962C41A4BD54BC45 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/compile/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CD5C3E668A2D4646A3AFC67A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/lstring.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lstring.cpp; path = test/headers/lstring.cpp; sourceTree = SOURCE_ROOT; };
+		D1B04AECFED34E31B4995502 /* cord-run-test-lstring-std_string */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cord-run-test-lstring-std_string"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C7AB5315C04B9290D93F99 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-std_string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "lstring-std_string.cpp"; path = "test/run/lstring-std_string.cpp"; sourceTree = SOURCE_ROOT; };
+		E970F236A9D44123AABA7F85 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-check_valid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "unicode-check_valid.cpp"; path = "test/run/unicode-check_valid.cpp"; sourceTree = SOURCE_ROOT; };
+		F97B3A87A42A498898644CE2 /* cord-compile-tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libcord-compile-tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD869EAA16FA4417A1DDA195 /* cord-run-test-unicode-string */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "cord-run-test-unicode-string"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		032EDEAA171D4A3AA51E185B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B7B26CA64491892890092 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/u8loader.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		056BA7294F4B4AFFA604FDA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F97B3A87A42A498898644CE2 /* cord-compile-tests */,
+				CB8D23029D994E1F900F2DEF /* f5-cord-fuzz-u8loader */,
+				5297422EB4AA494B877F9F7A /* cord-headers-tests */,
+				5278F054CF774688BB036248 /* cord-run-test-lstring-compare */,
+				D1B04AECFED34E31B4995502 /* cord-run-test-lstring-std_string */,
+				B03A74E6170E4860AE99F204 /* cord-run-test-memory */,
+				0E580E109E00498AABCA013E /* cord-run-test-unicode-check_valid */,
+				60D98600DD05440397DE9C50 /* cord-run-test-unicode-encoding */,
+				FD869EAA16FA4417A1DDA195 /* cord-run-test-unicode-string */,
+				0C5964C1183D4F9E9860A05C /* cord-run-test-unicode-view */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		106B07791D734856A0919A54 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6ED75A01A59D4AA18902DE0C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/iostream.cpp */,
+				CD5C3E668A2D4646A3AFC67A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/lstring.cpp */,
+				0E26E2DCBC4846F0AF60182E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/tstring.cpp */,
+				83ED29B588AF4C11B2764C6E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-core.cpp */,
+				84ABD9B38365419084CEDB7D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-encodings.cpp */,
+				86DCEE00EA9E4431B68D7910 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-iterators.cpp */,
+				3F0EA7BD01DA40E7A1BC7E2D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-string.cpp */,
+				03B60AF61C3E4321A5D5A2B2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-view.cpp */,
+				BEDB699B1F62401B8E3AC37B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		15A5ADDCBD9144EB98BAA500 /* f5-cord-fuzz-u8loader */ = {
+			isa = PBXGroup;
+			children = (
+				032EDEAA171D4A3AA51E185B /* Source Files */,
+				CB36094614724AFCB81BEB8F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/CMakeLists.txt */,
+			);
+			name = "f5-cord-fuzz-u8loader";
+			sourceTree = "<group>";
+		};
+		29AAC6F543B748E4BB41306D /* cord-run-test-unicode-check_valid */ = {
+			isa = PBXGroup;
+			children = (
+				8E2E5F5948A142248D01BEF5 /* Source Files */,
+				7B5979CE2A314740A06E83BD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */,
+			);
+			name = "cord-run-test-unicode-check_valid";
+			sourceTree = "<group>";
+		};
+		2BC4F2CD428246DB9DC1A38C /* cord-run-test-unicode-encoding */ = {
+			isa = PBXGroup;
+			children = (
+				A5BE1D9B939F418AA60FBF83 /* Source Files */,
+				9CA53E5CC98A404DA21CA3C8 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */,
+			);
+			name = "cord-run-test-unicode-encoding";
+			sourceTree = "<group>";
+		};
+		34B7BC25F87C4EE1BB0F587D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7393CB429B6843C2AF292814 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-view.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3976EF6591194D2A8CAE859C /* cord-run-test-unicode-view */ = {
+			isa = PBXGroup;
+			children = (
+				34B7BC25F87C4EE1BB0F587D /* Source Files */,
+				757E3B6A7294487DA007E260 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */,
+			);
+			name = "cord-run-test-unicode-view";
+			sourceTree = "<group>";
+		};
+		55488CD34FF545F7B460DE6B /* f5-cord-fuzz */ = {
+			isa = PBXGroup;
+			children = (
+				7C27498A4B7440A88D554549 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/CMakeLists.txt */,
+			);
+			name = "f5-cord-fuzz";
+			sourceTree = "<group>";
+		};
+		5714488F7C7C406D8CFD78AE /* cord-run-test-unicode-string */ = {
+			isa = PBXGroup;
+			children = (
+				86DA36AE8E90444F8A95C0BA /* Source Files */,
+				47B9AD4ECBE44DD08ACF6A5C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */,
+			);
+			name = "cord-run-test-unicode-string";
+			sourceTree = "<group>";
+		};
+		57372BB2BB03491A8A3C82C0 /* cord-run-test-memory */ = {
+			isa = PBXGroup;
+			children = (
+				CFA53C6508F64C129E313F41 /* Source Files */,
+				13212E56E8234DADB93ACCF6 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */,
+			);
+			name = "cord-run-test-memory";
+			sourceTree = "<group>";
+		};
+		5BF147BFA4B74491AEC82738 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F7E7C082A0B46D9871F5CF9 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-compare.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6CC61779A6E34B2F83B08767 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				DB79073122BF43B7BCF8195C /* CMake Rules */,
+				9C608FF195034248B96186E6 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		86DA36AE8E90444F8A95C0BA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B869FF4E65D04E2AB0752936 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-string.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8D3F0E754320406A9DE7B6C5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7AB5315C04B9290D93F99 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-std_string.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8E2E5F5948A142248D01BEF5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E970F236A9D44123AABA7F85 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-check_valid.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9118B5B7981E4319BB74D474 /* cord-run-test-lstring-compare */ = {
+			isa = PBXGroup;
+			children = (
+				5BF147BFA4B74491AEC82738 /* Source Files */,
+				2B77E335D781461AAAA4BC04 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */,
+			);
+			name = "cord-run-test-lstring-compare";
+			sourceTree = "<group>";
+		};
+		A420A09E4B424351B906BC02 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9B44304964541C997E6A4DF /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring-compare.cpp */,
+				1AC5FFE4639048289D6B8841 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring.cpp */,
+				49B23D0FBD694993BA18B473 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/memory.cpp */,
+				794E8E9AC15A457D8A5979A4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/tstring.cpp */,
+				5D3C6D079AC3443BA696250F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/u8view.cpp */,
+				AAAF04BA19E94142A493D6EE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/unicode.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A5BE1D9B939F418AA60FBF83 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				83A04BBA810447A2B1E95182 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-encoding.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B8AD9B7B70E04430B65DB19D = {
+			isa = PBXGroup;
+			children = (
+				6CC61779A6E34B2F83B08767 /* ALL_BUILD */,
+				C2009AF26E8544018112E7CF /* cord-compile-tests */,
+				15A5ADDCBD9144EB98BAA500 /* f5-cord-fuzz-u8loader */,
+				55488CD34FF545F7B460DE6B /* f5-cord-fuzz */,
+				DFA1DF92F67C4D5FA3DABBE1 /* cord-headers-tests */,
+				3976EF6591194D2A8CAE859C /* cord-run-test-unicode-view */,
+				29AAC6F543B748E4BB41306D /* cord-run-test-unicode-check_valid */,
+				2BC4F2CD428246DB9DC1A38C /* cord-run-test-unicode-encoding */,
+				57372BB2BB03491A8A3C82C0 /* cord-run-test-memory */,
+				5714488F7C7C406D8CFD78AE /* cord-run-test-unicode-string */,
+				C7B8588F75264A52A4FD2128 /* cord-run-test-lstring-std_string */,
+				9118B5B7981E4319BB74D474 /* cord-run-test-lstring-compare */,
+				056BA7294F4B4AFFA604FDA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2009AF26E8544018112E7CF /* cord-compile-tests */ = {
+			isa = PBXGroup;
+			children = (
+				A420A09E4B424351B906BC02 /* Source Files */,
+				CC257132962C41A4BD54BC45 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/CMakeLists.txt */,
+			);
+			name = "cord-compile-tests";
+			sourceTree = "<group>";
+		};
+		C7B8588F75264A52A4FD2128 /* cord-run-test-lstring-std_string */ = {
+			isa = PBXGroup;
+			children = (
+				8D3F0E754320406A9DE7B6C5 /* Source Files */,
+				A8F9CD448AA44C2E953ABC22 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/CMakeLists.txt */,
+			);
+			name = "cord-run-test-lstring-std_string";
+			sourceTree = "<group>";
+		};
+		CFA53C6508F64C129E313F41 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C06691E9A5B4F758214EF5E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/memory.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DB79073122BF43B7BCF8195C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DFA1DF92F67C4D5FA3DABBE1 /* cord-headers-tests */ = {
+			isa = PBXGroup;
+			children = (
+				106B07791D734856A0919A54 /* Source Files */,
+				6EFD1D4BA415448C947EA242 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/CMakeLists.txt */,
+			);
+			name = "cord-headers-tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B86454FAF4E41E0A3813A43 /* cord-run-test-unicode-string */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6173E5610744059F2C3B28 /* Build configuration list for PBXNativeTarget "cord-run-test-unicode-string" */;
+			buildPhases = (
+				99C8990F3C0A4C2496BAB5BC /* Sources */,
+				3F5152EDF9C4447BBAD55640 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F7EB7EEE2D747C4A6EE5C3E /* PBXTargetDependency */,
+			);
+			name = "cord-run-test-unicode-string";
+			productName = "cord-run-test-unicode-string";
+			productReference = FD869EAA16FA4417A1DDA195 /* cord-run-test-unicode-string */;
+			productType = "com.apple.product-type.tool";
+		};
+		5488BDE1F606430C9CFF3CC1 /* cord-run-test-unicode-encoding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B1B4D2CC86481CB7AE5FCB /* Build configuration list for PBXNativeTarget "cord-run-test-unicode-encoding" */;
+			buildPhases = (
+				8DEE3D4314CC48AFBF497323 /* Sources */,
+				B2FC1F6EF51049188EA00840 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68AD1FE0BF1C460982D74E0F /* PBXTargetDependency */,
+			);
+			name = "cord-run-test-unicode-encoding";
+			productName = "cord-run-test-unicode-encoding";
+			productReference = 60D98600DD05440397DE9C50 /* cord-run-test-unicode-encoding */;
+			productType = "com.apple.product-type.tool";
+		};
+		6F09670C4D4A42978660C628 /* cord-run-test-memory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A25C635D66424EA589E057 /* Build configuration list for PBXNativeTarget "cord-run-test-memory" */;
+			buildPhases = (
+				BBDE90859A9342E6847BE2C2 /* Sources */,
+				3E50414F805246FF836F70D6 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				955BE788772744789E44DECD /* PBXTargetDependency */,
+			);
+			name = "cord-run-test-memory";
+			productName = "cord-run-test-memory";
+			productReference = B03A74E6170E4860AE99F204 /* cord-run-test-memory */;
+			productType = "com.apple.product-type.tool";
+		};
+		756B1EDC7C31401F9FD2A32F /* cord-run-test-lstring-std_string */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0B519AA01BD42CCBB4C6883 /* Build configuration list for PBXNativeTarget "cord-run-test-lstring-std_string" */;
+			buildPhases = (
+				E77263D01E80422388C042B1 /* Sources */,
+				504665D869234E52BE8829A6 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E189E75880424EA187AF7D81 /* PBXTargetDependency */,
+			);
+			name = "cord-run-test-lstring-std_string";
+			productName = "cord-run-test-lstring-std_string";
+			productReference = D1B04AECFED34E31B4995502 /* cord-run-test-lstring-std_string */;
+			productType = "com.apple.product-type.tool";
+		};
+		99084693082F45498FDD4F01 /* f5-cord-fuzz-u8loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4F69CE032746ED98F16036 /* Build configuration list for PBXNativeTarget "f5-cord-fuzz-u8loader" */;
+			buildPhases = (
+				B261A9B8A4E7480BA025F3C8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1962A39F00444EC4B112D83E /* PBXTargetDependency */,
+			);
+			name = "f5-cord-fuzz-u8loader";
+			productName = "f5-cord-fuzz-u8loader";
+			productReference = CB8D23029D994E1F900F2DEF /* f5-cord-fuzz-u8loader */;
+			productType = "com.apple.product-type.tool";
+		};
+		9E575D972C6C4B978221BD1F /* cord-run-test-unicode-check_valid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F5F81D9A3A47289382F1BB /* Build configuration list for PBXNativeTarget "cord-run-test-unicode-check_valid" */;
+			buildPhases = (
+				0EE967EDAC664FBB9743DBE4 /* Sources */,
+				04320795774043D58A05F5BA /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A1C6AC44C174B5A9D8CE85C /* PBXTargetDependency */,
+			);
+			name = "cord-run-test-unicode-check_valid";
+			productName = "cord-run-test-unicode-check_valid";
+			productReference = 0E580E109E00498AABCA013E /* cord-run-test-unicode-check_valid */;
+			productType = "com.apple.product-type.tool";
+		};
+		A844E46EB7EF4772BD52D7DC /* cord-headers-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65CF2BDD1EB741419310CBF7 /* Build configuration list for PBXNativeTarget "cord-headers-tests" */;
+			buildPhases = (
+				1BEE65BE142948FF968D3DE6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4022295468DB458F8306EED3 /* PBXTargetDependency */,
+			);
+			name = "cord-headers-tests";
+			productName = "cord-headers-tests";
+			productReference = 5297422EB4AA494B877F9F7A /* cord-headers-tests */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C0E9C030A21A4AC59BD4710F /* cord-run-test-lstring-compare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2731D20475A94FDA8A292875 /* Build configuration list for PBXNativeTarget "cord-run-test-lstring-compare" */;
+			buildPhases = (
+				1BF6DEF1899340DCB11ACC15 /* Sources */,
+				AA6923C7D2154BDB95B2D881 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D778BD7A97C04B4E900625EC /* PBXTargetDependency */,
+			);
+			name = "cord-run-test-lstring-compare";
+			productName = "cord-run-test-lstring-compare";
+			productReference = 5278F054CF774688BB036248 /* cord-run-test-lstring-compare */;
+			productType = "com.apple.product-type.tool";
+		};
+		E49B72272D5643E7B2666707 /* cord-compile-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD00232655436AB62B0850 /* Build configuration list for PBXNativeTarget "cord-compile-tests" */;
+			buildPhases = (
+				9169EC3D58484F519E330DFB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66A5BB747687420BA71598AD /* PBXTargetDependency */,
+			);
+			name = "cord-compile-tests";
+			productName = "cord-compile-tests";
+			productReference = F97B3A87A42A498898644CE2 /* cord-compile-tests */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F278AD874A404373A83DE965 /* cord-run-test-unicode-view */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 893FE3559E634C9EBD7C9ED0 /* Build configuration list for PBXNativeTarget "cord-run-test-unicode-view" */;
+			buildPhases = (
+				8291D18F3D1349898DC53B85 /* Sources */,
+				23D06D96A99D4BE0A1ED3FBD /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFF43D1A145943B29FBE9949 /* PBXTargetDependency */,
+			);
+			name = "cord-run-test-unicode-view";
+			productName = "cord-run-test-unicode-view";
+			productReference = 0C5964C1183D4F9E9860A05C /* cord-run-test-unicode-view */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A12056BCAB444D4B524F28B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 284FCA26D1D040E1BF224775 /* Build configuration list for PBXProject "f5-cord" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EEE419B4180440C39BD1A828 /* Debug */,
+				B3182E158E7D4B7BAE4A9D98 /* Release */,
+				7BCA7D74CF544B9693A6EB35 /* MinSizeRel */,
+				1A9B433F6EAE44B2B59E5FFF /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = B8AD9B7B70E04430B65DB19D;
+			projectDirPath = /Users/hotnow/TESTTHINGS/cpp/src/fost/cord;
+			projectRoot = "";
+			targets = (
+				72EF43544CFE41678E878464 /* ALL_BUILD */,
+				2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */,
+				E4C19B3BD8EF408897C6D1CE /* install */,
+				E49B72272D5643E7B2666707 /* cord-compile-tests */,
+				80D2F13E534946B8B7191E28 /* f5-cord-fuzz */,
+				99084693082F45498FDD4F01 /* f5-cord-fuzz-u8loader */,
+				A844E46EB7EF4772BD52D7DC /* cord-headers-tests */,
+				C0E9C030A21A4AC59BD4710F /* cord-run-test-lstring-compare */,
+				756B1EDC7C31401F9FD2A32F /* cord-run-test-lstring-std_string */,
+				6F09670C4D4A42978660C628 /* cord-run-test-memory */,
+				9E575D972C6C4B978221BD1F /* cord-run-test-unicode-check_valid */,
+				5488BDE1F606430C9CFF3CC1 /* cord-run-test-unicode-encoding */,
+				4B86454FAF4E41E0A3813A43 /* cord-run-test-unicode-string */,
+				F278AD874A404373A83DE965 /* cord-run-test-unicode-view */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04320795774043D58A05F5BA /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run/CMakeScripts/cord-run-test-unicode-check_valid_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		04874CC28BD743948F17EE91 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		23D06D96A99D4BE0A1ED3FBD /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run/CMakeScripts/cord-run-test-unicode-view_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3B37E1A3635C4C0EA80B1580 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3E50414F805246FF836F70D6 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run/CMakeScripts/cord-run-test-memory_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3F5152EDF9C4447BBAD55640 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run/CMakeScripts/cord-run-test-unicode-string_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		4DC92730C01D4E2488C5723F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		504665D869234E52BE8829A6 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run/CMakeScripts/cord-run-test-lstring-std_string_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		56C56E866E0F481BB4FF0AC5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		59A34CCD8DF644059910CB4C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6EE699E0C14C485A87A1C147 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		77C9189EFC294477A561C65E = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		AA6923C7D2154BDB95B2D881 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run/CMakeScripts/cord-run-test-lstring-compare_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B2FC1F6EF51049188EA00840 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run/CMakeScripts/cord-run-test-unicode-encoding_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EE967EDAC664FBB9743DBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD386C0290A44E3593B413FA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-check_valid.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEE65BE142948FF968D3DE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BFD926B41648B2853BAA7B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/iostream.cpp */,
+				AD849BD7A2234D3BBDB04E4B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/lstring.cpp */,
+				6D30349206D0470FA9665858 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/tstring.cpp */,
+				228984FB657940269FAA10D2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-core.cpp */,
+				A975343F408A45A18CD6854C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-encodings.cpp */,
+				2A23FCB2DE414E09B6FA9C04 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-iterators.cpp */,
+				6CC962DDDBC24C278D6A1DB4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-string.cpp */,
+				93BBD8DC961648DEA94283BE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode-view.cpp */,
+				D445AECE1D3F4E1889917A1B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/headers/unicode.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BF6DEF1899340DCB11ACC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32DF02743044279BC5E00EE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-compare.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8291D18F3D1349898DC53B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABDC7BA142448F38EDC44C2 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-view.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DEE3D4314CC48AFBF497323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EE27C04E24483986FC7435 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-encoding.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9169EC3D58484F519E330DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCEDD3FBB4547C09EBC2DF1 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring-compare.cpp */,
+				BABEF9C93EE24337AF9CEA3A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/lstring.cpp */,
+				31B926E674DD49E1B4137843 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/memory.cpp */,
+				836307F0416B472A94A1859E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/tstring.cpp */,
+				F5B6BD0F4D734C5BB07B764D /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/u8view.cpp */,
+				EE13B04747AC4CE88854FAD6 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/compile/unicode.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C8990F3C0A4C2496BAB5BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF6F1335FFA4F019A13ADB7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/unicode-string.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B261A9B8A4E7480BA025F3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3E9A86A7E24354812B5A91 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/fuzz/u8loader.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBDE90859A9342E6847BE2C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517C9D8345F147468927EAEF /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/memory.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77263D01E80422388C042B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873049B2371644EC80290893 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/cord/test/run/lstring-std_string.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1962A39F00444EC4B112D83E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 19000A3EA0464BF4B360CF2E /* PBXContainerItemProxy */;
+		};
+		2028FB22C7D649D2B4A8C42D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99084693082F45498FDD4F01 /* f5-cord-fuzz-u8loader */;
+			targetProxy = 8BF5081536974C6FB9915E63 /* PBXContainerItemProxy */;
+		};
+		2B044F44934B4921A16C92D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 2EAD3B81402C4B0480FC47C2 /* PBXContainerItemProxy */;
+		};
+		4022295468DB458F8306EED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = A0F9C35EC7404086803BD6A6 /* PBXContainerItemProxy */;
+		};
+		66A5BB747687420BA71598AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 85F2BBA0F3D64AFC9B7C40DD /* PBXContainerItemProxy */;
+		};
+		68AD1FE0BF1C460982D74E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 139940963B5F4E3F9A7193B1 /* PBXContainerItemProxy */;
+		};
+		7A1C6AC44C174B5A9D8CE85C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = C1EE1A64F4EB432F97ECDB8E /* PBXContainerItemProxy */;
+		};
+		955BE788772744789E44DECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = B92D93AEB300460EA5A230FB /* PBXContainerItemProxy */;
+		};
+		9F7EB7EEE2D747C4A6EE5C3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = D4FDAE67123944CBA9920108 /* PBXContainerItemProxy */;
+		};
+		D778BD7A97C04B4E900625EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = E00AC5AFFF32470C8A56A1B0 /* PBXContainerItemProxy */;
+		};
+		E189E75880424EA187AF7D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 9DA644535F7F42538245A417 /* PBXContainerItemProxy */;
+		};
+		E3A6A9D58AC34A4A9ED4523C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72EF43544CFE41678E878464 /* ALL_BUILD */;
+			targetProxy = 044F8E8E901A479EBE1CEAFC /* PBXContainerItemProxy */;
+		};
+		FFF43D1A145943B29FBE9949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 4498FDD4C5A64D28B7B61B4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		093F1785ACD647C899514C95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0B6A6F46922B439AAC5737E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		0E424B9462234EE3AC59E1AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-string";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1884D1BE57AD4EC6B37E9358 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-memory";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		19DCB4BAE7EA47BF9EA59213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-memory";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1AD78BA61A47424792774846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-encoding";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1D6D604326F74D899F88F608 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-encoding";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		222C3867B13B4408B8585C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-check_valid";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		22C26614BDA2494998E46251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-view";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		235CB1DF4E6646D29D148CA2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-lstring-compare";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2B5F279967AE4C3AAE2309E6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-cord-fuzz";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/fuzz;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2D2BA6AAAA2D4A77A5F6FFE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-cord-fuzz-u8loader";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/fuzz;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		362AB37E1A294F16AEB58E28 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-string";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3E2825CF3A9F4B8A843E5F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-cord-fuzz";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/fuzz;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		41D9F6E41DE34F1B92D9CF4F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/headers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4AADEAFB1108408888C69966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		541AB237840F40D3AEFF9CB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-lstring-std_string";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		54A6562695CF41A186FCFF1F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-cord-fuzz-u8loader";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/fuzz;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		5B3269C4FF404204B1500B7E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5B534F9925CB43C3B8C6E74C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		609B61B8E393427D97239F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/headers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6627EE72A94C45C09022A816 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-encoding";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		68A9257814384425BB7550DF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6A2241317B8E42A68F2A7F7D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		71156B27C13F4043BB119204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		731A34AB2DB54BA5856741E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-lstring-std_string";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		80198BD7AAD64EC4A6F28C9D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-cord-fuzz";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/fuzz;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		808C146ED47F48ADBCA23E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-check_valid";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8E031B2E96EA46E78A2A57F3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-string";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8E568E56FEFA4E3D931AE220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-encoding";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9281A2228C744505B8E7C335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-compile-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/compile;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		956E45D8C87242F9984F66D2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-compile-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/compile;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		97ECDC21C8B64371BDCF9A04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/build;
+			};
+			name = Debug;
+		};
+		9B1870AC29184DC39BDE6DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-compile-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/compile;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A25CC6C124824005A1AA1416 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-cord-fuzz-u8loader";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/fuzz;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A39D6D83D7044EADB33D3E01 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A446899CD46F452D929909FA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/build;
+			};
+			name = MinSizeRel;
+		};
+		AC6BDFCF49D14A5D8927B6F7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-memory";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AE5D848C533241F0A0F0DCF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-cord-fuzz-u8loader";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/fuzz;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B1DEB48DE5284DF98C793C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/build;
+			};
+			name = Release;
+		};
+		B2FF5A26A65E42CC9507D810 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B4E301C88EB745B5B5F3D372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-string";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B5F08A784D4F4B8488263197 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-lstring-compare";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B80A2D9B2AF04CAC845B8C77 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-compile-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/compile;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BCA919A5099D4DCDBB2803DB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/headers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C0C7FD5492044BF38DEA866C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-lstring-compare";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C89B430EA1D84B8BB0239312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-view";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D0E001F6E1174904BE6B1694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-lstring-compare";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D7528DF2DDDB404D8DCA6EFE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/build;
+			};
+			name = RelWithDebInfo;
+		};
+		D9A3762769614A5DAF2F4EE4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-view";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DE4EFA61272D4832BEEF44CA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E61C55495E2740EC89DC7566 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-check_valid";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E79CCCD1A5C84BAEA81417FC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-view";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E8807DF00A4D471FA7568EA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/headers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F05C2308072848F7ACFB5365 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-unicode-check_valid";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F1D7EC19C75D4F0BAA54CC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-memory";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F370636145B443E7B803D8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "f5-cord-fuzz";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/fuzz;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F444D19B221C43B18AFA0964 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-lstring-std_string";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FA4CD3D9B7244F7EA985842F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/cord/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG -fdiagnostics-show-option -Werror -Wall -Wextra -Wpedantic -Wno-gnu-string-literal-operator-template -Wno-unused-const-variable -Wno-unused-local-typedefs -Wno-unused-variable '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "cord-run-test-lstring-std_string";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FF67BA8E4D8B4ABEBF2F9B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/cord;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05BD658770E740EC9DDABD36 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71156B27C13F4043BB119204 /* Debug */,
+				FF67BA8E4D8B4ABEBF2F9B70 /* Release */,
+				6A2241317B8E42A68F2A7F7D /* MinSizeRel */,
+				5B3269C4FF404204B1500B7E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0D80F41EB3384768BEB6C041 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B534F9925CB43C3B8C6E74C /* Debug */,
+				4AADEAFB1108408888C69966 /* Release */,
+				68A9257814384425BB7550DF /* MinSizeRel */,
+				B2FF5A26A65E42CC9507D810 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		19F5F81D9A3A47289382F1BB /* Build configuration list for PBXNativeTarget "cord-run-test-unicode-check_valid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222C3867B13B4408B8585C53 /* Debug */,
+				808C146ED47F48ADBCA23E6E /* Release */,
+				E61C55495E2740EC89DC7566 /* MinSizeRel */,
+				F05C2308072848F7ACFB5365 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2731D20475A94FDA8A292875 /* Build configuration list for PBXNativeTarget "cord-run-test-lstring-compare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E001F6E1174904BE6B1694 /* Debug */,
+				C0C7FD5492044BF38DEA866C /* Release */,
+				B5F08A784D4F4B8488263197 /* MinSizeRel */,
+				235CB1DF4E6646D29D148CA2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		284FCA26D1D040E1BF224775 /* Build configuration list for PBXProject "f5-cord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97ECDC21C8B64371BDCF9A04 /* Debug */,
+				B1DEB48DE5284DF98C793C91 /* Release */,
+				A446899CD46F452D929909FA /* MinSizeRel */,
+				D7528DF2DDDB404D8DCA6EFE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		65CF2BDD1EB741419310CBF7 /* Build configuration list for PBXNativeTarget "cord-headers-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609B61B8E393427D97239F35 /* Debug */,
+				E8807DF00A4D471FA7568EA1 /* Release */,
+				BCA919A5099D4DCDBB2803DB /* MinSizeRel */,
+				41D9F6E41DE34F1B92D9CF4F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		893FE3559E634C9EBD7C9ED0 /* Build configuration list for PBXNativeTarget "cord-run-test-unicode-view" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C26614BDA2494998E46251 /* Debug */,
+				C89B430EA1D84B8BB0239312 /* Release */,
+				E79CCCD1A5C84BAEA81417FC /* MinSizeRel */,
+				D9A3762769614A5DAF2F4EE4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9B6173E5610744059F2C3B28 /* Build configuration list for PBXNativeTarget "cord-run-test-unicode-string" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E424B9462234EE3AC59E1AE /* Debug */,
+				B4E301C88EB745B5B5F3D372 /* Release */,
+				8E031B2E96EA46E78A2A57F3 /* MinSizeRel */,
+				362AB37E1A294F16AEB58E28 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9C4F69CE032746ED98F16036 /* Build configuration list for PBXNativeTarget "f5-cord-fuzz-u8loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D2BA6AAAA2D4A77A5F6FFE3 /* Debug */,
+				AE5D848C533241F0A0F0DCF7 /* Release */,
+				54A6562695CF41A186FCFF1F /* MinSizeRel */,
+				A25CC6C124824005A1AA1416 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A6A25C635D66424EA589E057 /* Build configuration list for PBXNativeTarget "cord-run-test-memory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D7EC19C75D4F0BAA54CC59 /* Debug */,
+				19DCB4BAE7EA47BF9EA59213 /* Release */,
+				AC6BDFCF49D14A5D8927B6F7 /* MinSizeRel */,
+				1884D1BE57AD4EC6B37E9358 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B0B519AA01BD42CCBB4C6883 /* Build configuration list for PBXNativeTarget "cord-run-test-lstring-std_string" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731A34AB2DB54BA5856741E7 /* Debug */,
+				541AB237840F40D3AEFF9CB6 /* Release */,
+				F444D19B221C43B18AFA0964 /* MinSizeRel */,
+				FA4CD3D9B7244F7EA985842F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B8DD00232655436AB62B0850 /* Build configuration list for PBXNativeTarget "cord-compile-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9281A2228C744505B8E7C335 /* Debug */,
+				9B1870AC29184DC39BDE6DA8 /* Release */,
+				956E45D8C87242F9984F66D2 /* MinSizeRel */,
+				B80A2D9B2AF04CAC845B8C77 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1B1B4D2CC86481CB7AE5FCB /* Build configuration list for PBXNativeTarget "cord-run-test-unicode-encoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E568E56FEFA4E3D931AE220 /* Debug */,
+				1AD78BA61A47424792774846 /* Release */,
+				1D6D604326F74D899F88F608 /* MinSizeRel */,
+				6627EE72A94C45C09022A816 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E2A1E75DADED40DEBDA60A87 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6A6F46922B439AAC5737E5 /* Debug */,
+				093F1785ACD647C899514C95 /* Release */,
+				DE4EFA61272D4832BEEF44CA /* MinSizeRel */,
+				A39D6D83D7044EADB33D3E01 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD81D837301347099D34F9BF /* Build configuration list for PBXAggregateTarget "f5-cord-fuzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E2825CF3A9F4B8A843E5F1F /* Debug */,
+				F370636145B443E7B803D8BB /* Release */,
+				80198BD7AAD64EC4A6F28C9D /* MinSizeRel */,
+				2B5F279967AE4C3AAE2309E6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A12056BCAB444D4B524F28B /* Project object */;
+}

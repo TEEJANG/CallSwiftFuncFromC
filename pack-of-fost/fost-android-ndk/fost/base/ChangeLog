@@ -1,0 +1,686 @@
+2019-04-25  Kirit Saelensminde  <kirit@felspar.com>
+ Add a setting, `fostlib::test::c_files_folder`, describing the root folder tests should use if they need access to the file system.
+
+2019-04-02  Kirit Saelensminde  <kirit@felspar.com>
+ Use of define `FSL_FORCE_STD_FILESYSTEM` switches from `boost::filesystem` to `std::filesystem` with names in `fostlib::fs`.
+
+2019-03-14  Kirit Saelensminde  <kirit@felspar.com>
+ Start to process the string deprecations that we want to have:
+    * Deprecate `fostlib::tagged_string<T, I>::underlying()`.
+    * Deprecate `fostlib::string::c_str()`.
+    * Add API for turning a `fostlib::string` into an `f5::u8string` (`u8string_transition`).
+
+2019-02-28  Kirit Saelensminde  <kirit@felspar.com>
+ Implement string conversion (ISO Zulu time) for `std::chrono::system_clock`
+
+2019-02-24  Kirit Saelensminde  <kirit@felspar.com>
+ Add new nonce functions that return base64url formatted random data in ordered and un-ordered variants.
+
+2019-01-08  Kirit Saelensminde  <kirit@felspar.com>
+ Force conversion of the underlying string type from a tagged string to `std::string` be explicitly invoked.
+
+2018-12-21  Kirit Saelensminde  <kirit@felspar.com>
+ Further changes needed for new f5-cord string implementation.
+
+2018-12-18  Kirit Saelensminde  <kirit@felspar.com>
+ Split the CMake configuraion into smaller parts.
+
+2018-12-18  Kirit Saelensminde  <kirit@felspar.com>
+ Changes to string handling to support wider adoption of `f5::u8string`
+
+2018-12-01  Kirit Saelensminde  <kirit@felspar.com>
+ Support EdDSA JWTs.
+
+2018-11-08  Kirit Saelensminde  <kirit@felspar.com>
+ JWT secrets can now be looked up via a function passed to the load function.
+
+2018-10-28  Kirit Saelensminde  <kirit@felspar.com>
+ Add iterator traits to JSON iterator.
+
+2018-10-07  Kirit Saelensminde  <kirit@felspar.com>
+ Tidy up some headers.
+
+2018-10-02  Kirit Saelensminde  <kirit@felspar.com>
+ Do less work when stringifying JSON.
+
+2018-09-28  Kirit Saelensminde  <kirit@felspar.com>
+ Refactor the integral to integral coercions to remove a lot of complex template meta-programming.
+
+2018-08-31  Kirit Saelensminde  <kirit@felspar.com>
+ Add a way to get a JSON pointer URL fragment string for a `jcursor`.
+
+2018-08-16  Kirit Saelensminde  <kirit@felspar.com>
+ Add a parser for JSON pointers.
+
+2018-08-15  Kirit Saelensminde  <kirit@felspar.com>
+ `fostlib::json::apply_visitor` can now take any number of lambda like expressions.
+
+2018-08-11  Kirit Saelensminde  <kirit@felspar.com>
+ An empty `jcursor` needs to be represented as an empty array in JSON.
+
+2018-08-10  Kirit Saelensminde  <kirit@felspar.com>
+ Add an `object` and `array` member to `json` to make access and iteration simpler.
+
+2018-08-09  Kirit Saelensminde  <kirit@felspar.com>
+ * Add direct comparison between JSON and u8view.
+ * Add iteration over the command line arguments passed to `fostlib::arguments`.
+
+2018-07-15  Kirit Saelensminde  <kirit@felspar.com>
+ Remove `info` member from exception and change `throw` to `noexcept`.
+
+2018-07-13  Kirit Saelensminde  <kirit@felspar.com>
+ * Remove `fostlib::variant` as it's not used.
+ * Switch `fostlib::json` to use `std::variant`.
+ * Remove memoize, as it's never been used.
+
+2018-07-12  Kirit Saelensminde  <kirit@felspar.com>
+ `fostlib::nullable`, `fostlib::null_t` and `fostlib::null` are now aliases to the `std::optional` types and values.
+
+2018-07-09  Kirit Saelensminde  <kirit@felspar.com>
+ Add a logger that outputs single lines of JSON to the console.
+
+2018-07-06  Kirit Saelensminde  <kirit@felspar.com>
+ * Use guids to generate temporary file names.
+ * Fix a potential problem with the pathname join function one of the paths is empty.
+
+2018-07-05  Kirit Saelensminde  <kirit@felspar.com>
+ * Fix up the library searches for `dynlink`
+ * Add some missing append operation for `string`
+
+2018-07-05  Tle Ekkul  <e.aryuth@gmail.com>
+ * Fixed password hashing to use `u8view` instead of `utf8_string`
+ * Fixed include for `fostlib::insert`
+
+2018-07-03  Kirit Saelensminde  <kirit@felspar.com>
+ * Use a more efficient implementation for `crypto_bytes` -- Reverted for now as the required system call header is not always available.
+ * Added RIPEMD-256 cryptographic hash function.
+
+2018-05-15  Kirit Saelensminde  <kirit@felspar.com>
+ Add coercions for jcursor index value types.
+
+2018-04-09  Kirit Saelensminde  <kirit@felspar.com>
+ Add some basic base16 support.
+
+2018-04-04  Kirit Saelensminde  <kirit@felspar.com>
+ Add various base32 encoding flavours (`base32`, `base32hex` and `base32c`)
+
+2018-03-30  Kirit Saelensminde  <kirit@felspar.com>
+ Add a fork of Crypto++'s fork of tweetnacl to generate ed25519 signing key pairs.
+
+2018-01-31  Kirit Saelensminde  <kirit@felspar.com>
+ Fix bug to handle requirements for autotest libraries properly.
+
+2018-01-12  Kirit Saelensminde  <kirit@felspar.com>
+ * Removed Boost lambda and bind
+ * Remove previously deprecated `fostlib::counter`.
+
+2018-01-06  Kirit Saelensminde  <kirit@felspar.com>
+ Allow the C++ version to be specified as `std-version` in the requirments.jam file.
+
+2017-12-28  Kirit Saelensminde  <kirit@felspar.com>
+ * `crypto_compare` works with Unicode strings.
+ * More tagged strings can now be coerced to `json` and to `f5::u8view`.
+
+2017-12-19  Kirit Saelensminde  <kirit@felspar.com>
+ * Improve the converting nullable constructor so it uses explicit type conversions.
+ * Make more string utilties compatible with `f5::u8view`, at the cost of wide character literals.
+ * Make `nullable<f5::u8view>` coercions from JSON not throw errors if the value isn't a string.
+
+2017-12-18  Kirit Saelensminde  <kirit@felspar.com>
+ Improve the jcursor APIs to better support u8view and move semantics.
+
+2017-12-11  Kirit Saelensminde  <kirit@felspar.com>
+ Add f5::lstring as an option for storage inside `fostlib::json`.
+
+2017-12-06  Kirit Saelensminde  <kirit@felspar.com>
+ Control characters need to be escaped when producing JSON strings.
+
+2017-11-08  Kirit Saelensminde  <kirit@felspar.com>
+ Can now mint a JWT with an initial payload.
+
+2017-09-17  Kirit Saelensminde  <kirit@felspar.com>
+ Remove uses of `boost::function` and make `worker` `const` sane.
+
+2017-08-21  Kirit Saelensminde  <kirit@felspar.com>
+ Add missing namespaces to the log definition macros.
+
+2017-08-19  Kirit Saelensminde  <kirit@felspar.com>
+ Small readability improvement to the default stdout logger.
+
+2017-08-11  Kirit Saelensminde  <kirit@felspar.com>
+ Crypto hashes now take a `f5::u8view` which should remove some memory allocations.
+
+2017-07-18  Kirit Saelensminde  <kirit@felspar.com>
+ Deprecate `fostlib::utf::u8_view` in favour of `f5::u8view`
+
+2017-07-17  Kirit Saelensminde  <kirit@felspar.com>
+ Move `utf::u8_view` to f5-cord.
+
+2017-07-16  Kirit Saelensminde  <kirit@felspar.com>
+ Remove `array_view` and replace with `f5::array_view` from f5-cord.
+
+2017-05-31  Kirit Saelensminde  <kirit@felspar.com>
+ * Fix generation of log messages from JSON where the modules are an array.
+ * Count the number of times an exception has been absorbed.
+*  Deprecate use of the `fostlib::string` JSON coercion in favour of `utf::u8_view`.
+
+2017-05-29  Kirit Saelensminde  <kirit@felspar.com>
+ Remove `variant` for storing atoms in `json`
+
+2017-05-11  Kirit Saelensminde  <kirit@felspar.com>
+ Don't print empty objects in the log stream.
+
+2017-05-07  Kirit Saelensminde  <kirit@felspar.com>
+ Load the global logging configuration much later so it can be changed using the `-i` or `-j` command line switches.
+
+2017-05-02  Kirit Saelensminde  <kirit@felspar.com>
+ * Better integrate `utf::u8_view` and `string`.
+ * Make `array-view` sliceable.
+
+2017-04-28  Kirit Saelensminde  <kirit@felspar.com>
+ There is now an explicit constructor from `std::string` for the `u8_view`.
+
+2017-04-27  Kirit Saelensminde  <kirit@felspar.com>
+ Make dates fully comparable.
+
+2017-04-11  Kirit Saelensminde  <kirit@felspar.com>
+ Improve error report when coercing JSON to strings fails.
+
+2017-03-22  Kirit Saelensminde  <kirit@felspar.com>
+ The `unexpected_eof` error can now take a `boost::system::error_code` for use with socket errors.
+
+2017-03-15  Kirit Saelensminde  <kirit@felspar.com>
+ * Improve the way that the JSON atomic type can be constructed from integral types.
+ * Allow us to move the underlying string out of a tagged string rvalue.
+
+2017-03-12  Kirit Saelensminde  <kirit@felspar.com>
+ Make the object logging functions properly variadic.
+
+2017-02-05  Kirit Saelensminde  <kirit@felspar.com>
+ Add a time profile for generating a histogram of timing results.
+
+2017-01-29  Kirit Saelensminde  <kirit@felspar.com>
+ Make the performance counter movable.
+
+2017-01-27  Kirit Saelensminde  <kirit@felspar.com>
+ * Add better support for "dynamic" modules.
+ * Log messages can be created directly from JSON.
+
+2017-01-25  Kirit Saelensminde  <kirit@felspar.com>
+ Add support for stderr to the stdout logger.
+
+2017-01-21  Kirit Saelensminde  <kirit@felspar.com>
+ Removed last uses of `boost::bind`.
+
+2017-01-19  Kirit Saelensminde  <kirit@felspar.com>
+ * Fix bug in the stdout logger when logging objects and arrays.
+ * Remove Boost bind from CLI implementation.
+ * Refactor the logging code to no longer use Boost function, lambda or bind.
+ * Refactor `atexit` so it no longer uses Boost function.
+
+2017-01-13  Kirit Saelensminde  <kirit@felspar.com>
+ * Refactor the logging messages to do fewer allocations.
+ * Refactor the JSON parser to make it more composable.
+ * Go back to the C++14 compatible `int64_t` to string implementation.
+ * Refactored the location of the `shared_ptr` in the `json` implementation.
+
+2017-01-12  Kirit Saelensminde  <kirit@felspar.com>
+ Removed the old `parser_lock` which is no longer needed.
+
+2017-01-07  Kirit Saelensminde  <kirit@felspar.com>
+ Allow access to the data buffer within the `utf8_view`.
+
+ 2017-01-03  Kirit Saelensminde  <kirit@felspar.com>
+ Switch to the new version of Boost Spirit. Drop support for Boost version prior to !.59.
+
+2016-12-25  Kirit Saelensminde  <kirit@felspar.com>
+ Construct the default logger sinks configuration rather than parse it from an embedded string.
+
+2016-12-24  Kirit Saelensminde  <kirit@felspar.com>
+ Improve the types in the `fostlib::string::const_iterator` so they better model the InputIterator concept.
+
+2016-12-14  Kirit Saelensminde  <kirit@felspar.com>
+ * Extend `exceptions::file_error` to also take a `boost::system::error_code`.
+ * Add error detection into `save_file`.
+
+2016-11-24  Kirit Saelensminde  <kirit@felspar.com>
+ Refactor `nullable` to look much more like the upcoming `std::optional`.
+
+2016-11-22  Kirit Saelensminde  <kirit@felspar.com>
+ Remove 'using namespace std::rel_ops`.
+
+2016-11-19  Kirit Saelensminde  <kirit@felspar.com>
+ Change the `fostlib::nullable` class to be implemented on top of `std::experimental::optional`.
+
+2016-11-16  Kirit Saelensminde  <kirit@felspar.com>
+ Exceptions caught in FSL_MAIN are now printed to stderr rather than stdout.
+
+2016-11-04  Kirit Saelensminde  <kirit@felspar.com>
+ Fix a problem for Boost 1.62.0
+
+2016-11-03  Kirit Saelensminde  <kirit@felspar.com>
+ Add the Panoptes file logger as the first of a set of optional loggers.
+
+2016-10-16  Kirit Saelensminde  <kirit@felspar.com>
+ Start to make use of the Unicode support in f5-cord.
+
+2016-10-08  Kirit Saelensminde  <kirit@felspar.com>
+ * Make hashing digester and hmac digester movable.
+ * Add a `set` member to the `jcursor` that overwrites old values in JSON structures.
+
+2016-09-26  Kirit Saelensminde  <kirit@felspar.com>
+ * Add logging messages about why a JWT gets rejected.
+ * We need to have `<` defined on JSON so do that instead of `std::less`.
+
+2016-09-24  Kirit Saelensminde  <kirit@felspar.com>
+ Added `std::less` overload for JSON with new `fost/json` header.
+
+2016-09-17  Kirit Saelensminde  <kirit@felspar.com>
+ The colourised logger now considers logging levels around each level when choosing a colour.
+
+2016-09-16  Kirit Saelensminde  <kirit@felspar.com>
+ Remove direct calls to `boost::spirit::parse` due to threading problems.
+
+2016-09-10  Kirit Saelensminde  <kirit@felspar.com>
+ *Initial version of new splitter API that uses views to cut down on memory allocations.
+ * Add additional APIs for `utf::u8_view`
+
+2016-09-09  Kirit Saelensminde  <kirit@felspar.com>
+ Allow construction and assignment of `fostlib::json` from nullable atomic types.
+
+2016-09-05  Kirit Saelensminde  <kirit@felspar.com>
+ * Added a UTF8 string view
+ * Added a JSON parse overload for UTF8 buffers and added extra tests.
+
+2016-08-27  Kirit Saelensminde  <kirit@felspar.com>
+ * Add `json_embedded_parser` which doesn't allow whitespace around the JSON.
+ * Add default constructors to the JSON parsers so they can be const constructed.
+
+2016-08-04  Kirit Saelensminde  <kirit@felspar.com>
+ Ensure that the lengths match before comparing the data in `crypto_compare`.
+
+2016-07-29  Kirit Saelensminde  <kirit@felspar.com>
+ * Added initial support for minting and checking JWT.
+ * Extra information for the `not_implemented` constructor can now be anything coercible to JSON. Also remove the exception from the `fost/core` header.
+ * Make public a `jcursor` constructor so we can copy part of another one.
+ * `jcursor` parts can be compared for equaility with string literals.
+ * The `not_implemented` exception can now be given JSON as its third argument.
+ * Add in nliteral comparison overloads in a couple of places they were missing.
+
+2016-07-11  Kirit Saelensminde  <kirit@felspar.com>
+ Fix a long standing bug in the Base64 encoder where it would add bad data when the data length was exactly divisible by 3.
+
+2016-06-10  Kirit Saelensminde  <kirit@felspar.com>
+ * Add a `fostlib::json::unparse` that takes a `fostlib::string`.
+ * Add a `fostlib::json::get` overload that can be given a default to substitute if the value doesn't exist.
+ * Add a coercion for the `sprintf` used in JSON unparsing. This should make it safer on a variety of platforms.
+
+2016-03-25  Kirit Saelensminde  <kirit@felspar.com>
+ * Add the F5 threadintg library to the standard project includes.
+ * Optimise the JSON unparse, especially for the case where we can unparse into a buffer.
+
+2016-03-22  Kirit Saelensminde  <kirit@felspar.com>
+ Added coercion for `std::vector` to JSON, which will give an array of the vector values coerced to JSON.
+
+2015-12-11  Kirit Saelensminde  <kirit@felspar.com>
+ * New `fostlib::crypto_bytes` function returns an array of bytes from a cryptographically secure location.
+ * Add new `fostlib::array_view` that allows for looking at memory areas.
+ * Implement PKBKDF2 with HMAC and SHA256 that produces a fixed length (64 bytes) derived key and one that produces a derived key whose length can be chosen at run time.
+ * Added `fostlib::crypto_compare` which is intended to be as close as possible to constant time for comparison of memory blocks (byte arrays and strings).
+
+2015-12-07  Kirit Saelensminde  <kirit@felspar.com>
+ Allow HMAC with std::array<unsigned char, n> secrets.
+
+2015-11-21  Kirit Saelensminde  <kirit@felspar.com>
+ gcc doesn't really get [[deprecated]] so disable the warnings.
+
+2015-10-28  Kirit Saelensminde  <kirit@felspar.com>
+ Add a new `werror` build option which sets the `-Werror` compile flag and turns warnings into errors. Fix remaining warnings in clang builds.
+
+2015-10-23  Kirit Saelensminde  <kirit@felspar.com>
+ Deprecated the `fostlib::exceptions::exception::info` members. Added a coercion from `fostlib::exceptions::exception`  to `fostlib::json`. Add a new forwarded exception type. Add `#define` `FOST_NO_STD_EXCEPTION_PTR` to control use of `std::exception_ptr`.
+
+2015-10-10  Kirit Saelensminde  <kirit@felspar.com>
+ Fix a problem with the variadic `insert` where it expected a `jcursor` rather than converted to one.
+
+2015-09-27  Kirit Saelensminde  <kirit@felspar.com>
+ Add digest and HMAC overloads for `std::vector<unsignec char>`.
+
+2015-08-21  Kirit Saelensminde  <kirit@felspar.com>
+ Moved the tagged string header.
+
+2015-07-22  Kirit Saelensminde  <kirit@felspar.com>
+ The performance counter now takes a variadic constructor to build the path that it will be recorded into.
+ Changed the `jcursor` constructors to be properly variadic.
+
+2015-06-20  Kirit Saelensminde  <kirit@felspar.com>
+ Added a mechanism for setting modules that are part of a system. The log messages now make use of this so it's easier to track where log messages come from.
+
+2015-06-19  Kirit Saelensminde  <kirit@felspar.com>
+ * `fostlib::push_back` now accepts a `fostlib::json::array_t`.
+ * Deprecate `fostlib::counter`.
+
+2015-06-16  Kirit Saelensminde  <kirit@felspar.com>
+ Use `std::rethrow_exception` to move an exception between threads.
+
+2015-06-14  Kirit Saelensminde  <kirit@felspar.com>
+ Added variadic versions of `fostlib::push_back` and `fostlib::insert`.
+
+2015-06-10  Kirit Saelensminde  <kirit@felspar.com>
+ Add coercions for ascii_string and utf8_string to json.
+
+2015-06-03  Kirit Saelensminde  <kirit@felspar.com>
+ We need libatomic if we're using gcc++ (or clang) for many programs so just have it included.
+
+2015-05-30  Kirit Saelensminde  <kirit@felspar.com>
+ Pretty up some common log patterns when using colour output.
+ Added colour options to the `stdout` logger.
+
+2015-05-25  Kirit Saelensminde  <kirit@felspar.com>
+ Remove the `FOST_HAS_MOVE` define because with C++14 we don't need it.
+
+2015-05-22  Kirit Saelensminde  <kirit@felspar.com>
+ Test file names can now end in `.tests.cpp` as well as `-tests.cpp`.
+
+2015-05-20  Kirit Saelensminde  <kirit@felspar.com>
+ Removed internal uses of `boost::scoped_ptr`.
+ Add SHA256 to the crypto wrappers.
+
+2015-05-18  Kirit Saelensminde  <kirit@felspar.com>
+ Replace all uses of `boost::filesystem::wpath` with `path`.
+
+2015-05-11  Kirit Saelensminde  <kirit@felspar.com>
+ When building an executable make sure that we pull in at least everything for fost-core.
+ Fix a build error with Boost 1.58.0.
+
+2015-05-09  Kirit Saelensminde  <kirit@felspar.com>
+ Switch to C++14.
+
+2015-04-29  Kirit Saelensminde  <kirit@felspar.com>
+ Improve the exception information where a `jcursor::insert` fails due to existing data at the requested key.
+
+2015-04-27  Kirit Saelensminde  <kirit@felspar.com>
+ Allow the C++ version to be specified using the `cpp11` and `cpp14` command line options to bjam.
+
+2015-01-13  Kirit Saelensminde  <kirit@felspar.com>
+ Removed a very unsafe string coercion that is no longer needed now we have tagged strings.
+
+2014-11-27  Kirit Saelensminde  <kirit@felspar.com>
+ Added a mechanism for joining paths (`fostlib::join_paths`) in the same sort of way that URL paths are joined.
+
+2014-10-31  Kirit Saelensminde  <kirit@felspar.com>
+ Improved FSL_CHECK so it doesn't need to declare a local variable.
+
+2014-10-18  Kirit Saelensminde  <kirit@felspar.com>
+ Added a new test macro `FSL_CHECK_ERROR` that ensures that the error between two values (normally reals) is less than an error term.
+
+2014-09-07  Kirit Saelensminde  <kirit@felspar.com>
+ The meta data set on the progress for a task is now made available to the meter readings.
+ There is a new `fostlib::cli::monitor` function that can be used to display a progress bar monitoring work towards a future.
+ Futures now return `const&`s instead of copies of the value when they're dereferenced.
+
+2014-09-06  Kirit Saelensminde  <kirit@felspar.com>
+ Allow `fostlib::future<>` instances to be compared for equality.
+
+2014-08-30  Kirit Saelensminde  <kirit@felspar.com>
+ The `fostlib::accessors` now use perfect forwarding if `FOST_HAS_MOVE` is defined.
+
+2014-08-16  Kirit Saelensminde  <kirit@felspar.com>
+ Need to not pretty print the JSON values when showing the full settings database as we're outputting something approximating a CSV file.
+
+2014-06-02  Kirit Saelensminde  <kirit@felspar.com>
+ Allow a `timestamp` to be coerced to a `boost::filesystem::wpath` with a file system friendly string.
+ Make the last parameter to `replace_all` default to `fostlib::null`.
+
+2014-05-31  Kirit Saelensminde  <kirit@felspar.com>
+ Redesign the way that threads are handled to try to improve reliability when things go wrong, especially with C++11.
+ Change the output streaming for `fostlib::string` to use the underlying platform implementation.
+ Try to set BOOST_SPIRIT_THREADSAFE to see if this makes a difference to thread problems associated with Boost Spirit.
+
+2014-05-30  Kirit Saelensminde  <kirit@felspar.com>
+ Fix a bug in the stdout logger sink which caused it to crash the logging when a log level was set.
+ Add C++11 move constructors to `fostlib::detail::log_object` (used for creation of log messages).
+ Extend the build system to support an optional requirements.jam that can be used to inject project requirements across all projects in a build.
+
+2014-05-19  Kirit Saelensminde  <kirit@felspar.com>
+ Change the way that `boost::filesystem::wpath` instances are converted from strings in order to fix a Boost bug on Android.
+
+2014-05-16  Kirit Saelensminde  <kirit@felspar.com>
+ Add in a JSON setting store, `fostlib::settings`. Add `-j` default command line switch so that it can be used rather than an INI file.
+
+2014-05-09  Kirit Saelensminde  <kirit@felspar.com>
+ Use Boost UUID library starting with version 1.42.
+ Fix a bug where bounds checking cause a build failure on platforms with unsigned char.
+
+2014-03-21  Kirit Saelensminde  <kirit@felspar.com>
+ Coercion from larger to smaller ints requires different implementations for signed and unsigned types. Silences a warning about a comparison always being true when an unsigned value is compared with zero.
+ Fixed another gcc warning for later versions of Boost about unused typedefs.
+
+2014-02-28  Kirit Saelensminde  <kirit@felspar.com>
+ Allow dates to have days added and subtracted from them.
+ Add `today` member to `fostlib::date`.
+
+2014-02-27  Kirit Saelensminde  <kirit@felspar.com>
+ Added a new `split` member to jcursor to allow one to be created by splitting up a single string.
+
+2014-01-14  Kirit Saelensminde  <kirit@felspar.com>
+ Fix some warnings for a couple of compilers.
+
+2014-01-12  Kirit Saelensminde  <kirit@felspar.com>
+ If clang is on the path for Linux then use that in preference to gcc
+ Extend the `fostlib::timestamp` and `fostlib::date` interfaces somewhat. Added a number of missing coercions and constructors to make things simpler and made sure that there is no loss in precision when converting to and from strings and JSON. Moved a number of timestamp and date members inline for speed.
+
+2013-08-20  Kirit Saelensminde  <kirit@felspar.com>
+ Added `fostlib::log::flush()` which blocks until the previous logged messages have been processed.
+
+2013-06-07  Kirit Saelensminde  <kirit@felspar.com>
+ The environment variable VERSION can now be used to specify an embedded version number in the result of fost-lib derived targets, or other shared libraries that make use of the <version> property.
+
+2013-05-03  Kirit Saelensminde  <kirit@felspar.com>
+ Make sure that the `fostlib::worker` can't leak an exception when it's destructed.
+
+2013-03-10  Kirit Saelensminde  <kirit@felspar.com>
+ Added the ability to set the log message module when using the logging DSL through a new `.module()` member on the log message builder.
+ `fostlib::absorbException` has been deprecated in favour of `fostlib::absorb_exception`.
+ `fostlib::replaceAll` has been deprecated in favour of `fostlib::replace_all`.
+
+2013-03-03  Kirit Saelensminde  <kirit@felspar.com>
+ Changed a couple of exceptions to put extended data into the JSON data rather than the free form text.
+
+2013-03-03  Kirit Saelensminde  <kirit@felspar.com>
+ Changed the `what()` implementation of `fostlib::exceptions::exception` to no longer write out more than one line (unless the info member of the exception does so). Also removed the settings for controlling the format of the `what()` string.
+
+2013-02-23  Kirit Saelensminde  <kirit@felspar.com>
+ Implemented better error detail for when a JSON array is accessed out of bounds.
+
+2013-02-23  Kirit Saelensminde  <kirit@felspar.com>
+ Refactored `FSL_CHECK_NEQ` so that it only evaluates it's arguments once.
+
+2013-02-22  Kirit Saelensminde  <kirit@felspar.com>
+ Moved the file specific functions into their own header. Now include `fost/file` rather than `fost/unicode` if you only need file handling APIs. Also added a `unique_filename` function suitable for generating temporary file names.
+
+2013-02-08  Kirit Saelensminde  <kirit@felspar.com>
+ Add a `directory_iterator` typedef which allows us to iterate over wpath based directory names across all supported versions of Boost.
+
+2013-02-05  Kirit Saelensminde  <kirit@felspar.com>
+ Initial simple progress meters allow progress from remote threads to be measured in a control thread.
+
+2013-01-13  Kirit Saelensminde  <kirit@felspar.com>
+ Implemented the file input operator for the `digester` so it is now possible to hash files on the file system.
+
+2012-11-23  Kirit Saelensminde  <kirit@felspar.com>
+ Added Boost Chrono to builds on Windows for Boost 1.47 and later.
+
+2012-11-16  Kirit Saelensminde  <kirit@felspar.com>
+ Removed the `workerqueue` as it doesn't do anything useful that a work pool doesn't already do.
+
+2012-08-17  Kirit Saelensminde  <kirit@felspar.com>
+ Removed a dead constructor that does nothing in `worker`.
+ No longer pass on log messages captured during tests. This stops expected errors from being displayed and confusing the test results.
+ Added a basic parser for the RFC1123 formatted dates used in protocols like SMTP and HTTP. Only the format produced by the Fost libraries is currently supported.
+
+2012-08-08  Kirit Saelensminde  <kirit@felspar.com>
+ The parser lock is now recursive. This means that we can be more aggressive about using it without causing deadlocks. Also removed the parser wrapper that doesn't take a lock so all uses are explicitly forced to acquire the lock at the right time.
+
+2012-08-04  Kirit Saelensminde  <kirit@felspar.com>
+ Deliberately leak the thread counter so that it can't be destructed before threads that are terminating in a global destructor get run.
+
+2012-08-03  Kirit Saelensminde  <kirit@felspar.com>
+ Added instrumentation for the number of worker threads in use. Also added decrement to the counter implementation.
+ Fixed a bug on Windows where the pre-increment would return the old value rather than the new one.
+ Dynamic loading of a library now tries with platform specific prefixes and suffixes before trying the name provided.
+
+2012-08-02  Kirit Saelensminde  <kirit@felspar.com>
+ Implement JSON casts for json::array_t and json::object_t.
+ Allow the use of constant workers (and in_proc) which makes certain thread wrappers more obvious to implement.
+ Implement futures with void type for worker and in_proc. We can still wait on them.
+ Added startswith and endswith members to the string class.
+
+2012-07-22  Kirit Saelensminde  <kirit@felspar.com>
+ Allow time stamps and time differences to be added and subtracted.
+
+2012-07-21  Kirit Saelensminde  <kirit@felspar.com>
+ Made time stamps comparable and also added in a new timediff implementation based on the Boost library version.
+
+2012-07-02  Kirit Saelensminde  <kirit@felspar.com>
+ Silenced a clang warning that turns up under some circumstances.
+
+2012-06-30  Kirit Saelensminde  <kirit@felspar.com>
+ Added configuration for the log level for the stdout global logger.
+
+2012-05-26  Kirit Saelensminde  <kirit@felspar.com>
+ Changed the logging DSL for logging JSON objects thanks to suggestions from jeroen Vermeulen.
+
+2012-04-16  Kirit Saelensminde  <kirit@felspar.com>
+ Finally implemented the decode portion of base 64 support.
+ Implemented a new logging DSL that makes it much simpler to create JSON objects in the log. Look at fost-base/Cpp/fost-core/log-tests.cpp for an example.
+
+2012-04-08  Kirit Saelensminde  <kirit@felspar.com>
+ Fixed up a problem where the crypto++ library wasn't installing properly on Windows.
+
+2012-04-07  Kirit Saelensminde  <kirit@felspar.com>
+ Renamed the fostlib::logging namespace to fostlib::log to make it shorter.
+
+2012-03-03  Kirit Saelensminde  <kirit@felspar.com>
+ Added coercions from fostlib::utf8_string.to std::vector<unsigned char>.
+ Fixed up the JSON and string representations of the timestamps so they are more ISO like and have an explicit UTC time zone.
+
+2012-03-02  Kirit Saelensminde  <kirit@felspar.com>
+ Added coercions between fostlib::json and fostlib::jcursor.
+
+2012-02-12  Kirit Saelensminde  <kirit@felspar.com>
+ Made some minor changes suggested by clang, including some dead code elimination.
+
+2012-01-30  Kirit Saelensminde  <kirit@felspar.com>
+ MSVC 10 supports stdint.h so changed the configuration to use that.
+
+2012-01-28  Kirit Saelensminde  <kirit@felspar.com>
+ Fixed up the fost-exe build target type so the fost-cli library is properly installed.
+
+2012-01-25  Kirit Saelensminde  <kirit@felspar.com>
+ Explicitly initialise some variables that were set before being returned in order to silence a compiler warning.
+
+2012-01-24  Kirit Saelensminde  <kirit@felspar.com>
+ The parser lock can now be acquired before the parse is called so that it can be used to cover the building of the parser.
+
+2012-01-15  Kirit Saelensminde  <kirit@felspar.com>
+ Allow the logging functions to take up to four arguments.
+ Allow string concatenation expressions with a narrow character literal to the left.
+
+2012-01-09  Kirit Saelensminde  <kirit@felspar.com>
+ Altered the internal cryptographic wrappers to use crypto++ instead of OpenSSL.
+
+2011-10-27  Kirit Saelensminde  <kirit@felspar.com>
+ Changed the unit testing so that it doesn't build a library any more.
+ Refactored some build parameters to remove repetition.
+
+2011-10-27  Kirit Saelensminde  <kirit@felspar.com>
+ Changed the unit test runner so that it displays the output of the test run as we need to see this in order to verify that the tests do actually run.
+
+2011-10-22  Kirit Saelensminde  <kirit@felspar.com>
+ Clear out the jobs that have been taken from the queue when a major problem occurs. This should help to stop threads waiting on futures from waiting forever.
+
+2011-10-21  Kirit Saelensminde  <kirit@felspar.com>
+ Added fostlib::bytes for calculating the size of a memory block in bytes.
+
+2011-10-09  Kirit Saelensminde  <kirit@felspar.com>
+ Updated the readme files for later versions of Ubuntu.
+
+2011-08-16  Kirit Saelensminde  <kirit@felspar.com>
+ Changed some test logging messages so they don't look like real errors any more.
+
+2011-07-28  Kirit Saelensminde  <kirit@felspar.com>
+ Added support for Boost 1.46.
+
+2011-04-10  Kirit Saelensminde  <kirit@felspar.com>
+ Added a time logging function that logs any individual test that takes more than ten seconds to run.
+ Added a timer to the datetime library which allows us to time how long parts of a program execution take.
+
+2011-04-09  Kirit Saelensminde  <kirit@felspar.com>
+ The insert functions for JSON values now use a coerce rather than a JSON constructor so the API will work with more data types.
+
+2011-03-11  Kirit Saelensminde  <kirit@felspar.com>
+ Updated the build system so that there is a new fost-integration-test target that will create a test executable that can be run at any later stage as well as run the tests during the build process.
+
+2011-03-04  Kirit Saelensminde  <kirit@felspar.com>
+ The jcursor constructor can now take up to four arguments and build a cursor path from them.
+
+2011-02-10  Kirit Saelensminde  <kirit@felspar.com>
+ JSON to JSON coercions are now supported and logging now accepts any parameter type which is coercable to JSON.
+
+2010-11-16  Kirit Saelensminde  <kirit@felspar.com>
+ Added a new basic logging library.
+
+2010-11-09  Kirit Saelensminde  <kirit@felspar.com>
+ The build system now supports installation based on the location set in the PREFIX envrionment variable. If the path is relative then it is relative to the location of the Jamroot file that is being built.
+
+2010-11-05  Kirit Saelensminde  <kirit@felspar.com>
+ Added a wrapper function for boost::spirit::parse which grabs a mutex forcing serialisation of the use of the parser to get around a threading bug in Spirit.
+
+2010-11-02  Kirit Saelensminde  <kirit@felspar.com>
+ Catching of incorrect exceptions in tests now shows the full text of the caught exception.
+
+2010-10-01  Kirit Saelensminde  <kirit@felspar.com>
+ Improved the display of exceptions by forcing them to use printOn.
+
+2010-09-26  Kirit Saelensminde  <kirit@felspar.com>
+ fostlib::string instances are now constructible from a wider range of iterators, including fostlib::string::const_iterator.
+
+2010-09-19  Kirit Saelensminde  <kirit@felspar.com>
+ Fixed a bug in coercion when going between nullable types.
+
+2010-09-17  Kirit Saelensminde  <kirit@felspar.com>
+ Data handling
+ - Started to add in insert for JSON containers
+
+2010-08-15  Kirit Saelensminde  <kirit@felspar.com>
+ Data handling
+ - Started adding a push_back function that allows consistent pushing back of data across a wide range of types. Currently supports std::list, std::vector and fostlib::json.
+
+2010-04-28  Kirit Saelensminde  <kirit@felspar.com>
+ Threading
+ - Added accessors to future so that we can see if there is an exception or a if future (result) is available.
+
+2010-04-28  Kirit Saelensminde  <kirit@felspar.com>
+ Basic library handling
+ - Added fost/relops.hpp and started to use it to remove a lot of duplicated code.
+
+2010-04-28  Kirit Saelensminde  <kirit@felspar.com>
+ Logging
+ - Added a YAML record class for outputting YAML log records.
+
+2010-04-06  Kirit Saelensminde  <kirit@felspar.com>
+ Parsers
+ - Removed the parser instances because they're not thread safe.
+
+2010-04-01  Kirit Saelensminde  <kirit@felspar.com>
+ Exception handling
+ - Allow us to throw not implemented exceptions based on Boost system errors.
+
+2010-03-29  Kirit Saelensminde  <kirit@felspar.com>
+ String handling
+ - Added coercion from string::hex_string to std::size_t
+
+2010-03-22  Kirit Saelensminde  <kirit@felspar.com>
+ ChangeLog
+ - Added ChangeLog

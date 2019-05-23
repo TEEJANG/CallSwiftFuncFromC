@@ -1,0 +1,23 @@
+2019-01-22  Kirit Saelensminde  <kirit@felspar.com>
+ Add debug logging for the HTTP schema loader.
+
+2018-09-05  Kirit Saelensminde  <kirit@felspar.com>
+ Complete the implementation of fetching schemas over HTTP(S).
+
+2018-08-31  Kirit Saelensminde  <kirit@felspar.com>
+ The implementation now fully conforms to the V7 test suite.
+
+2018-08-31  Kirit Saelensminde  <kirit@felspar.com>
+ Added an API that can be used to register schema loaders.
+
+2018-08-24  Kirit Saelensminde  <kirit@felspar.com>
+ Refactor the assertion functions so that they will be easier to extend in future.
+
+2018-08-13  Kirit Saelensminde  <kirit@felspar.com>
+ Complete implementation for `properties` assertions.
+
+2018-08-12  Kirit Saelensminde  <kirit@felspar.com>
+ Add stress tests that download parts of the full test suite which shows that `not` is fully implemented.
+
+2018-08-11  Kirit Saelensminde  <kirit@felspar.com>
+ Implemented some initial basic checks that should be a useful start.

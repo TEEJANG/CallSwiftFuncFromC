@@ -1,0 +1,1356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 38AB646E9D05449FBF81A90A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				BDCD8AAD08114DAB88C56035 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		72EF43544CFE41678E878464 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1849FA0DF1FC4546BEF81C83 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				004DA998F357410C9993C6CA /* CMake Rules */,
+			);
+			dependencies = (
+				E1BC1403D6E842EB818D74E1 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		E4C19B3BD8EF408897C6D1CE /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 437494607F80474EA17C2FE5 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				A6409CE13BDB47AB845FEC63 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5D0A31731E114D97A8F9EF5F /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1326A2568260452C876A69EB /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-nonblocking.cpp */ = {isa = PBXBuildFile; fileRef = BE0F4607D66D481195BD4E14 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-nonblocking.cpp */; };
+		1B5B845576414DAAA85B2906 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E4FABBA62B644624976C5812 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */; };
+		21CBB8B30858448C85997EEE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/limiters.cpp */ = {isa = PBXBuildFile; fileRef = 44D0A228D8C74229B1099451 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/limiters.cpp */; };
+		26184A93553B4E038BEA5FD7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-blocking.cpp */ = {isa = PBXBuildFile; fileRef = 79F8E6269DD9472CB9FA6377 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-blocking.cpp */; };
+		2C9C584FC0AD49DC803108BD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/set.cpp */ = {isa = PBXBuildFile; fileRef = 18460A447DB44C91BFC777C8 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/set.cpp */; };
+		313D3E4376634628AB3506FC /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8511A448808A42BA82156731 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */; };
+		48ECA579FE9D414990EC314F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/policy.cpp */ = {isa = PBXBuildFile; fileRef = 57AA3B99302649F1B5E17509 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/policy.cpp */; };
+		4C7C4E67EE5B49CFADC8E89A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/ring.cpp */ = {isa = PBXBuildFile; fileRef = 28E0D4DBD876448188E43B8C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/ring.cpp */; };
+		75028B7793D24372B33E328B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/channel.cpp */ = {isa = PBXBuildFile; fileRef = 3145A50130D04020B2264F27 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/channel.cpp */; };
+		7F3BF99AB1334B8D8DDE2FD0 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B3413192399241899F615156 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */; };
+		83C95E0943114A599D409369 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/tsmap-unique_ptr.cpp */ = {isa = PBXBuildFile; fileRef = 85C4675128BC4EE3B9B7606B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/tsmap-unique_ptr.cpp */; };
+		85B5D18E38C84C98AD4B01CE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/reactor.cpp */ = {isa = PBXBuildFile; fileRef = 305618C44D4C412AABC584BA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/reactor.cpp */; };
+		956C8EEA49B74E47BD4C6AE1 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/map.cpp */ = {isa = PBXBuildFile; fileRef = ACAD03716F1F44668B4C7A6E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/map.cpp */; };
+		98D89FB8C0F2415CB36260B7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/sync.cpp */ = {isa = PBXBuildFile; fileRef = 012C2E6C7EBF4FBDA5143A8A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/sync.cpp */; };
+		B514DFD5FB00447F89D14BF4 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 57E5A71BFA694E93ABD2E4A7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/CMakeLists.txt */; };
+		CFFABEFE100C494E8836FFB7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/queue.cpp */ = {isa = PBXBuildFile; fileRef = D52C63672C874ADBBB0504D9 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/queue.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		3427A4EEFD324E9D8488F26A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		8D49ACAFE5C245E095510EE3 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		93D642380288474EA9739D3D /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		CDAE2FBD11C14E2E9C983D48 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0BFA286DD0D44FDCB04B8277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1633E715A22468B986DB1F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		5EA602E4A26443BD98A7163C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1633E715A22468B986DB1F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		849890BD75B24C2EBDE60A34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1633E715A22468B986DB1F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		D8AA3E454D8448D5866AE345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1633E715A22468B986DB1F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72EF43544CFE41678E878464;
+			remoteInfo = ALL_BUILD;
+		};
+		EC5E2D06AD9D4CA786A6E228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1633E715A22468B986DB1F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+		F23E2F30B058427AB4BD5B0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1633E715A22468B986DB1F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FBFA2BA3EC643F0873B6195;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012C2E6C7EBF4FBDA5143A8A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/sync.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sync.cpp; path = test/headers/sync.cpp; sourceTree = SOURCE_ROOT; };
+		06C3358D2E284553A9987664 /* threading-run-test-limiters-unlimited-nonblocking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "threading-run-test-limiters-unlimited-nonblocking"; sourceTree = BUILT_PRODUCTS_DIR; };
+		099D8CF1507349E3A839ADA6 /* threading-run-test-tsmap-unique_ptr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "threading-run-test-tsmap-unique_ptr"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18460A447DB44C91BFC777C8 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/set.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = set.cpp; path = test/headers/set.cpp; sourceTree = SOURCE_ROOT; };
+		1BAE28F031AA43B0A5F49521 /* threading-run-test-limiters-unlimited-blocking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "threading-run-test-limiters-unlimited-blocking"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E0D4DBD876448188E43B8C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/ring.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ring.cpp; path = test/headers/ring.cpp; sourceTree = SOURCE_ROOT; };
+		305618C44D4C412AABC584BA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/reactor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reactor.cpp; path = test/headers/reactor.cpp; sourceTree = SOURCE_ROOT; };
+		3145A50130D04020B2264F27 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/channel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = channel.cpp; path = test/headers/channel.cpp; sourceTree = SOURCE_ROOT; };
+		396B51333D46474980570CBA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		44D0A228D8C74229B1099451 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/limiters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = limiters.cpp; path = test/headers/limiters.cpp; sourceTree = SOURCE_ROOT; };
+		57AA3B99302649F1B5E17509 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/policy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = policy.cpp; path = test/headers/policy.cpp; sourceTree = SOURCE_ROOT; };
+		57E5A71BFA694E93ABD2E4A7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/headers/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		79F8E6269DD9472CB9FA6377 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-blocking.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "limiters-unlimited-blocking.cpp"; path = "test/run/limiters-unlimited-blocking.cpp"; sourceTree = SOURCE_ROOT; };
+		8511A448808A42BA82156731 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		85C4675128BC4EE3B9B7606B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/tsmap-unique_ptr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "tsmap-unique_ptr.cpp"; path = "test/run/tsmap-unique_ptr.cpp"; sourceTree = SOURCE_ROOT; };
+		AADB5D9D6322425A9902C0C4 /* threading-headers-tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libthreading-headers-tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACAD03716F1F44668B4C7A6E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/map.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = map.cpp; path = test/headers/map.cpp; sourceTree = SOURCE_ROOT; };
+		B3413192399241899F615156 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BE0F4607D66D481195BD4E14 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-nonblocking.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "limiters-unlimited-nonblocking.cpp"; path = "test/run/limiters-unlimited-nonblocking.cpp"; sourceTree = SOURCE_ROOT; };
+		D52C63672C874ADBBB0504D9 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/queue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = queue.cpp; path = test/headers/queue.cpp; sourceTree = SOURCE_ROOT; };
+		E4FABBA62B644624976C5812 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = test/run/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0D53D68C13384F089E5AC4F8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		0DABA47E29B24F43B66BA5F6 /* threading-run-test-limiters-unlimited-nonblocking */ = {
+			isa = PBXGroup;
+			children = (
+				A6EFC934991C487589668748 /* Source Files */,
+				8511A448808A42BA82156731 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */,
+			);
+			name = "threading-run-test-limiters-unlimited-nonblocking";
+			sourceTree = "<group>";
+		};
+		16B3A234F9F649A8A64F75A3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3145A50130D04020B2264F27 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/channel.cpp */,
+				44D0A228D8C74229B1099451 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/limiters.cpp */,
+				ACAD03716F1F44668B4C7A6E /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/map.cpp */,
+				57AA3B99302649F1B5E17509 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/policy.cpp */,
+				D52C63672C874ADBBB0504D9 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/queue.cpp */,
+				305618C44D4C412AABC584BA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/reactor.cpp */,
+				28E0D4DBD876448188E43B8C /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/ring.cpp */,
+				18460A447DB44C91BFC777C8 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/set.cpp */,
+				012C2E6C7EBF4FBDA5143A8A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/sync.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1F87200F3AE14859B7D767AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AADB5D9D6322425A9902C0C4 /* threading-headers-tests */,
+				1BAE28F031AA43B0A5F49521 /* threading-run-test-limiters-unlimited-blocking */,
+				06C3358D2E284553A9987664 /* threading-run-test-limiters-unlimited-nonblocking */,
+				099D8CF1507349E3A839ADA6 /* threading-run-test-tsmap-unique_ptr */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		576B938CE17248AD9377FB66 /* threading-headers-tests */ = {
+			isa = PBXGroup;
+			children = (
+				16B3A234F9F649A8A64F75A3 /* Source Files */,
+				57E5A71BFA694E93ABD2E4A7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/CMakeLists.txt */,
+			);
+			name = "threading-headers-tests";
+			sourceTree = "<group>";
+		};
+		5A9D94C120674D978D5F5792 /* threading-run-test-tsmap-unique_ptr */ = {
+			isa = PBXGroup;
+			children = (
+				ED65F399DC624D0E828D907C /* Source Files */,
+				E4FABBA62B644624976C5812 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */,
+			);
+			name = "threading-run-test-tsmap-unique_ptr";
+			sourceTree = "<group>";
+		};
+		9E6BD82A030B4192B9EA2490 /* threading-run-test-limiters-unlimited-blocking */ = {
+			isa = PBXGroup;
+			children = (
+				F2AB60AC5298404AA72DCE4A /* Source Files */,
+				B3413192399241899F615156 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/CMakeLists.txt */,
+			);
+			name = "threading-run-test-limiters-unlimited-blocking";
+			sourceTree = "<group>";
+		};
+		A6EFC934991C487589668748 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F4607D66D481195BD4E14 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-nonblocking.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B72BECE05B784728AAA65081 = {
+			isa = PBXGroup;
+			children = (
+				C6B6CECF10F34EA2A3F9DFDE /* ALL_BUILD */,
+				576B938CE17248AD9377FB66 /* threading-headers-tests */,
+				5A9D94C120674D978D5F5792 /* threading-run-test-tsmap-unique_ptr */,
+				0DABA47E29B24F43B66BA5F6 /* threading-run-test-limiters-unlimited-nonblocking */,
+				9E6BD82A030B4192B9EA2490 /* threading-run-test-limiters-unlimited-blocking */,
+				1F87200F3AE14859B7D767AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6B6CECF10F34EA2A3F9DFDE /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				0D53D68C13384F089E5AC4F8 /* CMake Rules */,
+				396B51333D46474980570CBA /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		ED65F399DC624D0E828D907C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				85C4675128BC4EE3B9B7606B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/tsmap-unique_ptr.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F2AB60AC5298404AA72DCE4A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				79F8E6269DD9472CB9FA6377 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-blocking.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A530A45D9B54E508694EE13 /* threading-run-test-limiters-unlimited-nonblocking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DED615C0E846989B46917C /* Build configuration list for PBXNativeTarget "threading-run-test-limiters-unlimited-nonblocking" */;
+			buildPhases = (
+				54E7BE9251994094B4678DB2 /* Sources */,
+				523AE6A8514E44EB8B69A2CD /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDBA4515EE75486598D565AA /* PBXTargetDependency */,
+			);
+			name = "threading-run-test-limiters-unlimited-nonblocking";
+			productName = "threading-run-test-limiters-unlimited-nonblocking";
+			productReference = 06C3358D2E284553A9987664 /* threading-run-test-limiters-unlimited-nonblocking */;
+			productType = "com.apple.product-type.tool";
+		};
+		9218FFFC811349C59DCBCE6C /* threading-headers-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E47C51F40F1431C99810EF5 /* Build configuration list for PBXNativeTarget "threading-headers-tests" */;
+			buildPhases = (
+				1878F7070FB64427AF59D1C7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4D01500344D4AD6B3CC93B4 /* PBXTargetDependency */,
+			);
+			name = "threading-headers-tests";
+			productName = "threading-headers-tests";
+			productReference = AADB5D9D6322425A9902C0C4 /* threading-headers-tests */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C4B8CB2F0AF0458DA9431057 /* threading-run-test-limiters-unlimited-blocking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC64445CECD41109628B8F4 /* Build configuration list for PBXNativeTarget "threading-run-test-limiters-unlimited-blocking" */;
+			buildPhases = (
+				6141D0F4EFBC4827B25CB251 /* Sources */,
+				FB9C5A02EFA847B08F77DF89 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4061CC1B3C0F4E8598A86D85 /* PBXTargetDependency */,
+			);
+			name = "threading-run-test-limiters-unlimited-blocking";
+			productName = "threading-run-test-limiters-unlimited-blocking";
+			productReference = 1BAE28F031AA43B0A5F49521 /* threading-run-test-limiters-unlimited-blocking */;
+			productType = "com.apple.product-type.tool";
+		};
+		D707E492C5734420AB4D835F /* threading-run-test-tsmap-unique_ptr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7508C95F00184C1D9634DE1E /* Build configuration list for PBXNativeTarget "threading-run-test-tsmap-unique_ptr" */;
+			buildPhases = (
+				362EB73315D6401D8FEFBBE8 /* Sources */,
+				CDB93EB8E15F4CA9988341AF /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76092ECAE33D4AE090CCD59B /* PBXTargetDependency */,
+			);
+			name = "threading-run-test-tsmap-unique_ptr";
+			productName = "threading-run-test-tsmap-unique_ptr";
+			productReference = 099D8CF1507349E3A839ADA6 /* threading-run-test-tsmap-unique_ptr */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1633E715A22468B986DB1F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 277645E48A3446D78A0F18E6 /* Build configuration list for PBXProject "f5-threading" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				CDAE2FBD11C14E2E9C983D48 /* Debug */,
+				93D642380288474EA9739D3D /* Release */,
+				3427A4EEFD324E9D8488F26A /* MinSizeRel */,
+				8D49ACAFE5C245E095510EE3 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = B72BECE05B784728AAA65081;
+			projectDirPath = /Users/hotnow/TESTTHINGS/cpp/src/fost/threading;
+			projectRoot = "";
+			targets = (
+				72EF43544CFE41678E878464 /* ALL_BUILD */,
+				2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */,
+				E4C19B3BD8EF408897C6D1CE /* install */,
+				9218FFFC811349C59DCBCE6C /* threading-headers-tests */,
+				C4B8CB2F0AF0458DA9431057 /* threading-run-test-limiters-unlimited-blocking */,
+				0A530A45D9B54E508694EE13 /* threading-run-test-limiters-unlimited-nonblocking */,
+				D707E492C5734420AB4D835F /* threading-run-test-tsmap-unique_ptr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		004DA998F357410C9993C6CA /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		268568F362BA46B7AEFFD9AA = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		523AE6A8514E44EB8B69A2CD /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run/CMakeScripts/threading-run-test-limiters-unlimited-nonblocking_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		98FB50818B264D3A96424E70 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A6409CE13BDB47AB845FEC63 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		BDCD8AAD08114DAB88C56035 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		CDB93EB8E15F4CA9988341AF /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run/CMakeScripts/threading-run-test-tsmap-unique_ptr_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D679DCDBD6E14B7F9CA0DFAC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		FB9C5A02EFA847B08F77DF89 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run -f /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run/CMakeScripts/threading-run-test-limiters-unlimited-blocking_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1878F7070FB64427AF59D1C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75028B7793D24372B33E328B /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/channel.cpp */,
+				21CBB8B30858448C85997EEE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/limiters.cpp */,
+				956C8EEA49B74E47BD4C6AE1 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/map.cpp */,
+				48ECA579FE9D414990EC314F /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/policy.cpp */,
+				CFFABEFE100C494E8836FFB7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/queue.cpp */,
+				85B5D18E38C84C98AD4B01CE /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/reactor.cpp */,
+				4C7C4E67EE5B49CFADC8E89A /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/ring.cpp */,
+				2C9C584FC0AD49DC803108BD /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/set.cpp */,
+				98D89FB8C0F2415CB36260B7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/headers/sync.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362EB73315D6401D8FEFBBE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C95E0943114A599D409369 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/tsmap-unique_ptr.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E7BE9251994094B4678DB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1326A2568260452C876A69EB /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-nonblocking.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6141D0F4EFBC4827B25CB251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26184A93553B4E038BEA5FD7 /* /Users/hotnow/TESTTHINGS/cpp/src/fost/threading/test/run/limiters-unlimited-blocking.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4061CC1B3C0F4E8598A86D85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = EC5E2D06AD9D4CA786A6E228 /* PBXContainerItemProxy */;
+		};
+		5D0A31731E114D97A8F9EF5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72EF43544CFE41678E878464 /* ALL_BUILD */;
+			targetProxy = D8AA3E454D8448D5866AE345 /* PBXContainerItemProxy */;
+		};
+		76092ECAE33D4AE090CCD59B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 849890BD75B24C2EBDE60A34 /* PBXContainerItemProxy */;
+		};
+		BDBA4515EE75486598D565AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 0BFA286DD0D44FDCB04B8277 /* PBXContainerItemProxy */;
+		};
+		D4D01500344D4AD6B3CC93B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = F23E2F30B058427AB4BD5B0B /* PBXContainerItemProxy */;
+		};
+		E1BC1403D6E842EB818D74E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FBFA2BA3EC643F0873B6195 /* ZERO_CHECK */;
+			targetProxy = 5EA602E4A26443BD98A7163C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DB54E62C1BB430BA4CFC0DD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-tsmap-unique_ptr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		168BE9501C9140AC8FCB93A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/headers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1CA81866C316412C80FC33E8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		24FA0CB20B1541F480B1F958 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3213175F39284A76AB506883 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-limiters-unlimited-nonblocking";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3769638DB6AC40D1BAFD8672 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/build;
+			};
+			name = MinSizeRel;
+		};
+		5A665C7D10BF44F4B0F0B623 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-limiters-unlimited-blocking";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6231EAE6700245589A47A5E0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6275D9B123794B3AB4AD08D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		67DF6B61D6494CB9B36989FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-limiters-unlimited-blocking";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6C44483AB51D43548C7D995F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6DC93824080C43A0A78AAB48 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6EEFFABE56064CFE8720861D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/MinSizeRel/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-limiters-unlimited-blocking";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		71919A3F1FF4415CA83B6642 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/headers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		76853F46C3E64F17B2557257 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-tsmap-unique_ptr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		79C65BFB8E1041608844EE49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8DA1663FE9204AAE90A9EEC0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/build;
+			};
+			name = RelWithDebInfo;
+		};
+		8E50EBB062BE4354861FAF3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-limiters-unlimited-nonblocking";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8FE42B064D7445968C902F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9B81A7F7895C49279CAA1DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/build;
+			};
+			name = Debug;
+		};
+		9BCE13F1313D4435AEF394A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-limiters-unlimited-blocking";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A967A4219C914167915F1660 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B66A54CC2CE843EFA14AD2E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-tsmap-unique_ptr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		BD1C6A1EFB7C48F1995967C9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BE3071FB77B6479BBD9DEF45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/build;
+			};
+			name = Release;
+		};
+		C39CD6163BBC4A7DAD4385F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C8AEF0FF23734117B5B47B85 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17         -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/RelWithDebInfo/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-limiters-unlimited-nonblocking";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D06806C6AF834D21BFAE7F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D6BA502ADBA643F792E8E9B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17     '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/Debug/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-tsmap-unique_ptr";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D7B06FE4254F4B879A0554E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/headers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E3BDA288104D452BA2C346B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/chrono/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/system/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names    /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_chrono.a -lboost_context -lboost_coroutine /Users/hotnow/TESTTHINGS/cpp/fost/boost/Release/libboost_system.a -lboost_thread ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-run-test-limiters-unlimited-nonblocking";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/run;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		FF6B4B1AB7C646DB8D69AF4A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",BOOST_COROUTINES_NO_DEPRECATION_WARNING,BOOST_COROUTINE_NO_DEPRECATION_WARNING);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/hotnow/TESTTHINGS/cpp/src/fost/threading/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/algorithm/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/align/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/array/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/asio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/atomic/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/bind/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/core/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/concept_check/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/config/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/container_hash/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/detail/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/foreach/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/function_types/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/functional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/fusion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/integer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/io/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/iterator/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lambda/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/lexical_cast/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/math/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/move/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/mpl/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/numeric_conversion/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/optional/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/phoenix/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/predef/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/preprocessor/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/proto/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/random/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/range/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/ratio/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/regex/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/smart_ptr/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/spirit/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/static_assert/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/throw_exception/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tokenizer/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tti/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/tuple/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_index/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/type_traits/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/typeof/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/utility/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/uuid/include,/Users/hotnow/TESTTHINGS/cpp/src/boost/variant/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "-std=c++17      -DNDEBUG '-std=gnu++1z'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "threading-headers-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hotnow/TESTTHINGS/cpp/fost/fost/threading/test/headers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1849FA0DF1FC4546BEF81C83 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6275D9B123794B3AB4AD08D3 /* Debug */,
+				8FE42B064D7445968C902F6A /* Release */,
+				BD1C6A1EFB7C48F1995967C9 /* MinSizeRel */,
+				1CA81866C316412C80FC33E8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		277645E48A3446D78A0F18E6 /* Build configuration list for PBXProject "f5-threading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B81A7F7895C49279CAA1DBF /* Debug */,
+				BE3071FB77B6479BBD9DEF45 /* Release */,
+				3769638DB6AC40D1BAFD8672 /* MinSizeRel */,
+				8DA1663FE9204AAE90A9EEC0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		38AB646E9D05449FBF81A90A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C44483AB51D43548C7D995F /* Debug */,
+				79C65BFB8E1041608844EE49 /* Release */,
+				6DC93824080C43A0A78AAB48 /* MinSizeRel */,
+				24FA0CB20B1541F480B1F958 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		437494607F80474EA17C2FE5 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39CD6163BBC4A7DAD4385F7 /* Debug */,
+				D06806C6AF834D21BFAE7F7D /* Release */,
+				A967A4219C914167915F1660 /* MinSizeRel */,
+				6231EAE6700245589A47A5E0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7508C95F00184C1D9634DE1E /* Build configuration list for PBXNativeTarget "threading-run-test-tsmap-unique_ptr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6BA502ADBA643F792E8E9B3 /* Debug */,
+				B66A54CC2CE843EFA14AD2E4 /* Release */,
+				0DB54E62C1BB430BA4CFC0DD /* MinSizeRel */,
+				76853F46C3E64F17B2557257 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7E47C51F40F1431C99810EF5 /* Build configuration list for PBXNativeTarget "threading-headers-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168BE9501C9140AC8FCB93A9 /* Debug */,
+				D7B06FE4254F4B879A0554E3 /* Release */,
+				FF6B4B1AB7C646DB8D69AF4A /* MinSizeRel */,
+				71919A3F1FF4415CA83B6642 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C9DED615C0E846989B46917C /* Build configuration list for PBXNativeTarget "threading-run-test-limiters-unlimited-nonblocking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E50EBB062BE4354861FAF3D /* Debug */,
+				E3BDA288104D452BA2C346B9 /* Release */,
+				3213175F39284A76AB506883 /* MinSizeRel */,
+				C8AEF0FF23734117B5B47B85 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CAC64445CECD41109628B8F4 /* Build configuration list for PBXNativeTarget "threading-run-test-limiters-unlimited-blocking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67DF6B61D6494CB9B36989FA /* Debug */,
+				9BCE13F1313D4435AEF394A5 /* Release */,
+				6EEFFABE56064CFE8720861D /* MinSizeRel */,
+				5A665C7D10BF44F4B0F0B623 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1633E715A22468B986DB1F7 /* Project object */;
+}
